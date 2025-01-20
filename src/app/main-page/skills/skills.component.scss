@@ -1,0 +1,65 @@
+@import "../../../styles.scss";
+
+.content {
+  margin-top: 160px;
+  @include pad();
+  @include dF(space-between);
+}
+
+.left {
+  padding-right: 160px;
+  @include dF();
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.element {
+  font-weight: 700;
+  text-align: center;
+}
+
+#skills .element img {
+  max-width: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#skills .element:hover img {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#skills .element p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+#skills .element:hover p {
+  @include lightBlue();
+}
+
+.looking,
+.another {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.another {
+  @include lightBlue();
+}
+
+.btn-primary {
+  margin-top: 36px;
+  @include primary;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img:hover {
+  cursor: pointer;
+}
