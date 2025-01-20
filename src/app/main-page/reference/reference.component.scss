@@ -1,0 +1,31 @@
+@import '../../../styles.scss';
+
+.reference{
+    margin-top: 160px;
+    @include dF();
+    @include pad();
+    flex-direction: column;
+}
+
+.element-wrapper{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid rgb(25, 203, 162);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.line_name{
+    @include dF();
+    margin-top: 40px;
+    gap: 24px;
+}
+
+.line{
+    width: 500px;
+    border: 2px solid rgba(75, 71, 255, 1);
+}

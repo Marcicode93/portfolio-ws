@@ -1,0 +1,28 @@
+@import "../../../styles.scss";
+
+.headline {
+  @include dF();
+}
+.line {
+  width: 500px;
+  margin-left: -500px;
+  margin-right: 12px;
+  border: 2px solid rgba(75, 71, 255, 1);
+}
+
+.elements {
+  @include dF();
+  @include pad();
+}
+
+.input-field {
+  @include bg-colour();
+  border: 2px solid rgba(75, 71, 255, 1);
+  border-radius: 8px;
+  width: 400px;
+  margin-bottom: 24px;
+}
+
+.ip3{
+    height: 160px;
+}

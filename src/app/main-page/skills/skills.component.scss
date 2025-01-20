@@ -3,7 +3,7 @@
 .content {
   margin-top: 160px;
   @include pad();
-  @include dF(space-between);
+  @include dF(space-between, flex-start);
 }
 
 .left {
@@ -11,6 +11,10 @@
   @include dF();
   flex-wrap: wrap;
   gap: 80px;
+}
+
+.right{
+    align-items: flex-start !important;
 }
 
 .element {

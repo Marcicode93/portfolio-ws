@@ -1,2 +1,81 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
+#portfolio {
+  margin-top: 160px;
+  @include pad();
+}
+
+.headline {
+  @include dF();
+  gap: 24px;
+
+  .line1 {
+    width: 100px;
+    border: 2px solid rgba(75, 71, 255, 1);
+  }
+
+  .line2 {
+    width: 500px;
+    border: 2px solid rgba(75, 71, 255, 1);
+    margin-right: -400px;
+  }
+}
+
+.tagline {
+  @include dF();
+  margin: 24px 0px 24px 0px;
+}
+
+.content-wrapper {
+  @include dF();
+  flex-direction: column;
+}
+
+.element img {
+  width: 500px;
+}
+
+.element {
+  @include dF();
+
+  p {
+    margin-top: 24px;
+  }
+}
+
+.btn-left {
+  @include secondary();
+
+  &:hover {
+    background-color: rgba(75, 71, 255, 1);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 250ms ease-in-out;
+    box-shadow: 0 1px 8px rgba(255, 254, 254, 0.8);
+  }
+}
+
+.btn-right {
+  @include bg-colour();
+  border: 2px solid rgba(75, 71, 255, 1);
+
+  &:hover {
+    background-color: rgba(75, 71, 255, 1);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 250ms ease-in-out;
+    box-shadow: 0 1px 8px rgba(255, 254, 254, 0.8);
+  }
+}
+
+button {
+  margin-top: 12px;
+  margin-right: 80px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.subtitle {
+  @include darkBlue();
+}
