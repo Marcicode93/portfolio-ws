@@ -29,6 +29,11 @@
   gap: $g;
 }
 
+@mixin pad(){
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 @mixin glow {
   cursor: pointer;
 
