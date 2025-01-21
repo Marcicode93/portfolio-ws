@@ -13,8 +13,8 @@
   gap: 80px;
 }
 
-.right{
-    align-items: flex-start !important;
+.right {
+  align-items: flex-start !important;
 }
 
 .element {
@@ -58,6 +58,10 @@
 .btn-primary {
   margin-top: 36px;
   @include primary;
+
+  a {
+    text-decoration: none;
+  }
 
   &:hover {
     cursor: pointer;

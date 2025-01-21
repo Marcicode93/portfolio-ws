@@ -13,16 +13,62 @@
 .elements {
   @include dF();
   @include pad();
+  margin-top: 46px;
+  margin-bottom: 46px;
 }
 
+.left {
+  max-width: 600px;
+  margin-right: 120px;
+}
+
+.right {
+  @include dF();
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 400px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  align-items: flex-start;
+}
 .input-field {
   @include bg-colour();
   border: 2px solid rgba(75, 71, 255, 1);
   border-radius: 8px;
-  width: 400px;
+  width: 500px;
   margin-bottom: 24px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
-.ip3{
-    height: 160px;
+.input-field::placeholder {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #888;
+  font-size: 14px;
+  transform: translateY(-10px);
+}
+
+.ip3 {
+  height: 160px;
+}
+
+.checkbox {
+  @include dF();
+  width: 100% !important;
+  gap: 12px;
+
+  a {
+    @include lightBlue();
+  }
+}
+
+.btn-primary {
+  @include primary();
+  margin-top: 12px;
 }

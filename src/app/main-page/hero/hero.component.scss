@@ -42,6 +42,9 @@
 
   .btn-primary {
     @include primary();
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -98,7 +101,7 @@ h2 {
   margin-top: -100px;
   padding-left: 24px;
 
-  .line{
+  .line {
     width: 140px;
     border: 2px solid rgba(75, 71, 255, 1);
     margin-right: 24px;
