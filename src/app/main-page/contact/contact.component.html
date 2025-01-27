@@ -15,15 +15,35 @@
         </p>
       </div>
       <div class="right">
-        <form (ngSubmit)="onSubmit()">
-          <input   [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" class="input-field" />
-          <input   [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your email" class="input-field" />
-          <textarea [(ngModel)]="contactData.message"
-            class="input-field ip3" name="message"
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <input
+            [(ngModel)]="contactData.name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            class="input-field"
+            required
+          />
+          <input
+            [(ngModel)]="contactData.email"
+            name="email"
+            type="email"
+            placeholder="Your email"
+            class="input-field"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          <textarea #message="ngModel" minlength="4"
+            [(ngModel)]="contactData.message"
+            class="input-field ip3"
+            name="message"
             placeholder="Your message"
             rows="30"
             cols="50"
-          ></textarea>
+            required
+          >@if(!message.valid && message.touched){
+            <span>Please enter a message</span>
+          }</textarea>
           <div class="checkbox">
             @if (isChecked) {
 
