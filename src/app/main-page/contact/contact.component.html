@@ -15,25 +15,39 @@
         </p>
       </div>
       <div class="right">
-        <input type="text" placeholder="Your name" class="input-field" />
-        <input type="text" placeholder="Your email" class="input-field" />
-        <textarea
-          class="input-field ip3"
-          placeholder="Your message"
-          rows="30"
-          cols="50"
-        ></textarea>
-        <div class="checkbox">
-          <img
-            src="../../../assets/img/06_contact/Property 1=Default.png"
-            alt=""
-          />
-          <p>
-            I've read the <a href="">privacy policy</a> and agree to the
-            processing of my data as outlined.
-          </p>
-        </div>
-        <button class="btn-primary">Send message!</button>
+        <form (ngSubmit)="onSubmit()">
+          <input   [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" class="input-field" />
+          <input   [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your email" class="input-field" />
+          <textarea [(ngModel)]="contactData.message"
+            class="input-field ip3" name="message"
+            placeholder="Your message"
+            rows="30"
+            cols="50"
+          ></textarea>
+          <div class="checkbox">
+            @if (isChecked) {
+
+            <img
+              src="../../../assets/img/06_contact/Property 1=Checked.png"
+              (click)="toggleCheckbox()"
+              alt="checkbox-checked"
+            />
+            } @else {
+
+            <img
+              src="../../../assets/img/06_contact/Property 1=Default.png"
+              (click)="toggleCheckbox()"
+              alt="checkbox-unchecked"
+            />
+            }
+
+            <p>
+              I've read the <a href="">privacy policy</a> and agree to the
+              processing of my data as outlined.
+            </p>
+          </div>
+          <button type="submit" class="btn-primary">Send message!</button>
+        </form>
       </div>
     </div>
   </div>

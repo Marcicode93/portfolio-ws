@@ -13,8 +13,8 @@
   }
 
   &:active {
-    transform: scale(0.95); /* Klickanimation */
-    box-shadow: 0 2px 4px rgb(255, 255, 255); /* Reduzierter Schatten beim Klicken */
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgb(255, 255, 255); 
   }
 }
 

@@ -30,6 +30,11 @@
   max-width: 400px;
 }
 
+form{
+ @include dF();
+ flex-direction: column; 
+}
+
 .subtitle {
   font-size: 24px;
   font-weight: 700;
@@ -43,6 +48,7 @@
   margin-bottom: 24px;
   margin-left: 120px;
   margin-right: 120px;
+  padding-left: 12px;
 }
 
 .input-field::placeholder {
@@ -62,6 +68,10 @@
   @include dF();
   width: 100% !important;
   gap: 12px;
+
+  img{
+    cursor: pointer;
+  }
 
   a {
     @include lightBlue();

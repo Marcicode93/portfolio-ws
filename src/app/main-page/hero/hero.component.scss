@@ -110,6 +110,7 @@ h2 {
 
   img {
     @include glow();
+    @include dF($ai:center);
     width: 20px;
     height: 20px;
     padding-right: 12px;

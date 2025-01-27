@@ -10,9 +10,19 @@
     padding-right: 200px;
 }
 
-.element{
+table{
+    @include dF();
+    flex-direction: column;
+
+    img{
+        padding-right: 12px;
+    }
+}
+
+.info{
     @include dF();
     margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 h1{
