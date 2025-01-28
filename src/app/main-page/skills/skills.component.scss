@@ -4,6 +4,7 @@
   margin-top: 160px;
   @include pad();
   @include dF(space-between, flex-start);
+  @include contentmax();
 }
 
 .left {

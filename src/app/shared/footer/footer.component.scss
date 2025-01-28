@@ -1,12 +1,8 @@
 @import "../../../styles.scss";
 
-* {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 footer {
   @include dF(space-between);
+  @include pad();
   padding-top: 80px;
   padding-bottom: 80px;
   border-top: 4px solid rgb(25, 203, 162);
@@ -21,5 +17,6 @@ h1 {
     @include glow();
     width: 20px;
     height: 20px;
+    padding-right: 24px;
   }
 }

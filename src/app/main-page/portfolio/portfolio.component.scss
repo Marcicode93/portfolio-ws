@@ -3,6 +3,7 @@
 #portfolio {
   margin-top: 160px;
   @include pad();
+  @include contentmax();
 }
 
 .headline {

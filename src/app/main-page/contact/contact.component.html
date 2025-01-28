@@ -19,31 +19,46 @@
           <input
             [(ngModel)]="contactData.name"
             name="name"
+            #nameField="ngModel"
             type="text"
             placeholder="Your name"
             class="input-field"
             required
           />
+          <div class="error">
+            @if (nameField.invalid && nameField.touched) { Name is required. }
+          </div>
           <input
             [(ngModel)]="contactData.email"
             name="email"
             type="email"
+            #emailField="ngModel"
             placeholder="Your email"
             class="input-field"
             required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           />
-          <textarea #message="ngModel" minlength="4"
+          <div class="error">
+            @if (emailField.invalid && emailField.touched) { Email is required.
+            }
+          </div>
+          <textarea
+            minlength="4"
             [(ngModel)]="contactData.message"
             class="input-field ip3"
             name="message"
+            #messageField="ngModel"
             placeholder="Your message"
             rows="30"
             cols="50"
             required
-          >@if(!message.valid && message.touched){
-            <span>Please enter a message</span>
-          }</textarea>
+          >
+          
+        </textarea>
+        <div class="error">
+          @if (messageField.invalid && messageField.touched) { Message is required.
+          }
+        </div>
           <div class="checkbox">
             @if (isChecked) {
 
@@ -65,8 +80,19 @@
               I've read the <a href="">privacy policy</a> and agree to the
               processing of my data as outlined.
             </p>
+            @if (formSubmitted && !isChecked) {
+            <p class="error-message" style="color: red">
+              Please accept the privacy policy.
+            </p>
+            }
           </div>
-          <button type="submit" class="btn-primary">Send message!</button>
+          <button
+            type="submit"
+            [disabled]="contactForm.invalid"
+            class="btn-primary"
+          >
+            Send message!
+          </button>
         </form>
       </div>
     </div>

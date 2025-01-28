@@ -3,6 +3,11 @@
 .headline {
   @include dF();
 }
+
+.content {
+  @include contentmax();
+}
+
 .line {
   width: 500px;
   margin-left: -500px;
@@ -13,26 +18,26 @@
 .elements {
   @include dF();
   @include pad();
+  align-items: flex-start;
   margin-top: 46px;
   margin-bottom: 46px;
 }
 
 .left {
-  max-width: 600px;
-  margin-right: 120px;
+  margin-right: 180px;
 }
 
 .right {
   @include dF();
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 400px;
+  max-width: 500px;
 }
 
-form{
- @include dF();
- flex-direction: column; 
+form {
+  @include dF();
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -40,15 +45,22 @@ form{
   font-weight: 700;
   align-items: flex-start;
 }
+
 .input-field {
   @include bg-colour();
   border: 2px solid rgba(75, 71, 255, 1);
   border-radius: 8px;
-  width: 500px;
+  width: 480px;
   margin-bottom: 24px;
-  margin-left: 120px;
-  margin-right: 120px;
   padding-left: 12px;
+
+  &.ng-touched.ng-invalid {
+    border-color: rgba(255,0,0,0.5);
+  }
+  
+  &.ng-touched.ng-valid {
+    border-color: rgba(41, 231, 20,0.6); 
+  }
 }
 
 .input-field::placeholder {
@@ -60,16 +72,40 @@ form{
   transform: translateY(-10px);
 }
 
+textarea{
+  &.ng-touched.ng-invalid {
+    border-color: rgba(255,0,0,0.5);
+  }
+  
+  &.ng-touched.ng-valid {
+    border-color: rgba(41, 231, 20,0.6); 
+  }
+}
+
+button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: -16px;
+  margin-bottom: 16px;
+}
+
 .ip3 {
   height: 160px;
 }
 
 .checkbox {
   @include dF();
-  width: 100% !important;
   gap: 12px;
+  margin-left: -4px;
 
-  img{
+  img {
     cursor: pointer;
   }
 
@@ -78,7 +114,11 @@ form{
   }
 }
 
+.error-message {
+  font-size: 12px !important;
+}
+
 .btn-primary {
   @include primary();
-  margin-top: 12px;
+  margin-top: 24px;
 }

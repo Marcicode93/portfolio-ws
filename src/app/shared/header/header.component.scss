@@ -2,8 +2,7 @@
 
 nav {
   @include dF(space-between, center);
-  padding-left: 60px;
-  padding-right: 60px;
+  @include pad();
   margin-top: 12px;
   position: sticky;
 

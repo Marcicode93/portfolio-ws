@@ -17,9 +17,10 @@ export class ContactComponent {
     message: '',
   };
 
-  http= inject(HttpClient)
+  http = inject(HttpClient);
 
   mailTest = true;
+  formSubmitted = false;
 
   post = {
     endPoint: 'https://marcel-steffen.de/sendMail.php',
@@ -37,12 +38,14 @@ export class ContactComponent {
   }
 
   onSubmit(ngForm: NgForm) {
+    this.formSubmitted=true;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.formSubmitted = false;
           },
           error: (error) => {
             console.error(error);
@@ -51,6 +54,7 @@ export class ContactComponent {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
+      this.formSubmitted=false;
     }
   }
 }
