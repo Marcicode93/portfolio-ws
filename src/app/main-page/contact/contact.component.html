@@ -53,12 +53,11 @@
             cols="50"
             required
           >
-          
-        </textarea>
-        <div class="error">
-          @if (messageField.invalid && messageField.touched) { Message is required.
-          }
-        </div>
+          </textarea>
+          <div class="error">
+            @if (messageField.invalid && messageField.touched) { Message is
+            required. }
+          </div>
           <div class="checkbox">
             @if (isChecked) {
 
@@ -95,6 +94,14 @@
           </button>
         </form>
       </div>
+    </div>
+    <div class="go-up">
+      <a href="#hero">
+        <img
+          src="../../../assets/img/06_contact/4. Go up button.png"
+          alt="go-up-button"
+        />
+      </a>
     </div>
   </div>
 </section>

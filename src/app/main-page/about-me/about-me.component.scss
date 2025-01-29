@@ -1,30 +1,40 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
-.content{
+.content {
+  @include dF();
+  @include pad();
+}
+
+.left {
+  padding-right: 200px;
+}
+
+// .first-img{
+//     width: 20px !important;
+// }
+
+table {
+  margin-top: 12px;
+
+  img {
+    padding-right: 12px;
+    max-width: 40px;
     @include dF();
-    @include pad();
-    margin-top: -200px;
+  }
 }
 
-.left{
-    padding-right: 200px;
+td {
+  padding-bottom: 12px;
 }
 
-table{
-    @include dF();
-    flex-direction: column;
-
-    img{
-        padding-right: 12px;
-    }
+.info {
+  @include dF();
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
-.info{
-    @include dF();
-    margin-bottom: 12px;
-    margin-top: 12px;
-}
-
-h1{
-    font-size: 76px;
+h1 {
+  font-size: 76px;
 }

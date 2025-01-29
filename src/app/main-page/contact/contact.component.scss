@@ -55,11 +55,11 @@ form {
   padding-left: 12px;
 
   &.ng-touched.ng-invalid {
-    border-color: rgba(255,0,0,0.5);
+    border-color: rgba(255, 0, 0, 0.5);
   }
-  
+
   &.ng-touched.ng-valid {
-    border-color: rgba(41, 231, 20,0.6); 
+    border-color: rgba(41, 231, 20, 0.6);
   }
 }
 
@@ -72,22 +72,21 @@ form {
   transform: translateY(-10px);
 }
 
-textarea{
+textarea {
   &.ng-touched.ng-invalid {
-    border-color: rgba(255,0,0,0.5);
+    border-color: rgba(255, 0, 0, 0.5);
   }
-  
+
   &.ng-touched.ng-valid {
-    border-color: rgba(41, 231, 20,0.6); 
+    border-color: rgba(41, 231, 20, 0.6);
   }
 }
 
 button:disabled {
-  background-color: #ccc; 
+  background-color: #ccc;
   cursor: not-allowed;
   opacity: 0.6;
 }
-
 
 .error {
   color: red;
@@ -112,6 +111,17 @@ button:disabled {
   a {
     @include lightBlue();
   }
+}
+
+.go-up{
+  @include dF(flex-end);
+  @include pad();
+  margin-bottom: 48px;
+
+  img{
+    width: 32px;
+  }
+
 }
 
 .error-message {

@@ -1,0 +1,6 @@
+{
+    "app": {
+      "hallo": "Guten Tag {{value}}",
+      "title": "Übersetzung Deutsch"
+    }
+  }

@@ -12,6 +12,12 @@ h1 {
   font-size: 42px;
 }
 
+.name_legal{
+  a{
+   margin-right: 12px;
+  }
+}
+
 .socials {
   img {
     @include glow();

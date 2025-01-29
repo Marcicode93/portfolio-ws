@@ -2,19 +2,21 @@
   <div class="element-wrapper">
     <div class="element">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius iste
-        voluptas, placeat quibusdam ex quas voluptatum qui eum dignissimos
-        adipisci omnis aperiam explicabo enim officia distinctio non eaque
-        eveniet?
+        {{ references[currentIndex].text }}
       </p>
       <div class="line_name">
         <div class="line"></div>
-        <p>Name</p>
+        <p>{{ references[currentIndex].name }}</p>
       </div>
     </div>
   </div>
+
+  <div class="profile">
+    <img [src]="references[currentIndex].img" alt="picture-of-person" />
+  </div>
+
   <div class="arrows">
-    <img src="../../../assets/img/05_reference/arrow_back.png" alt="" />
-    <img src="../../../assets/img/05_reference/arrow_forward.png" alt="" />
+    <img [src]="leftArrowSrc" (click)="previousImage()" alt="arrow-left" />
+    <img [src]="rightArrowSrc" (click)="nextImage()" alt="arrow-right" />
   </div>
 </section>
