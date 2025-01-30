@@ -113,15 +113,20 @@ button:disabled {
   }
 }
 
-.go-up{
+.go-up {
   @include dF(flex-end);
   @include pad();
   margin-bottom: 48px;
 
-  img{
+  img {
     width: 32px;
-  }
+    transition: all 500ms ease;
 
+    &:hover {
+      transform: scale(1.2) translateY(-5px);
+      @include glow();
+    }
+  }
 }
 
 .error-message {
@@ -131,4 +136,14 @@ button:disabled {
 .btn-primary {
   @include primary();
   margin-top: 24px;
+}
+
+.shadow {
+  width: 30%; /* Skaliert das Bild auf 50% der Breite des Containers */
+  height: auto; /* Erhält das Seitenverhältnis des Bildes */
+  position: absolute; /* Falls du das Bild positionieren möchtest */
+  bottom: 0; /* Positioniert das Bild am unteren Rand des Containers */
+  left: -10%;/* Oder andere Positionen je nach Bedarf */
+  top:350%;
+
 }

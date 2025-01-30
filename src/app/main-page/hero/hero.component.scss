@@ -111,9 +111,116 @@ h2 {
 
   img {
     @include glow();
-    @include dF($ai:center);
+    @include dF($ai: center);
     width: 20px;
     height: 20px;
     padding-right: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-picture {
+    width: 380px;
+    margin-right: 600px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-picture {
+    width: 380px;
+    margin-right: 500px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px 8px 16px;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-picture {
+    width: 380px;
+    margin-right: 400px;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero-picture {
+    width: 380px;
+    margin-right: 400px;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
   }
 }

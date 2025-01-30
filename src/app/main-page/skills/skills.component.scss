@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-#skills .element img {
+.element img {
   max-width: 100px;
   transition: transform 0.3s ease-in-out;
 }
@@ -75,4 +75,127 @@
 
 img:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .element img {
+    max-width: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .left {
+    padding-right: 80px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .element img {
+    max-width: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .btn-primary {
+    margin-top: 48px !important;
+  }
+
+  .left {
+    padding-right: 60px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px 8px 16px;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .left {
+    padding-right: 40px;
+  }
+
+  .element img {
+    max-width: 40px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 780px) {
+  .element img {
+    max-width: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
 }

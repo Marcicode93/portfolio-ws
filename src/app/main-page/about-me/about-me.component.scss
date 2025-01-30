@@ -20,6 +20,12 @@ table {
     padding-right: 12px;
     max-width: 40px;
     @include dF();
+
+    &:hover {
+      transform: scale(1.2) translateY(-5px);
+      transition: all 300ms ease-in-out;
+      cursor: pointer;
+    }
   }
 }
 
@@ -37,4 +43,116 @@ td {
 
 h1 {
   font-size: 76px;
+}
+
+@media (max-width: 1200px) {
+  .profile-picture {
+    width: 380px;
+  }
+
+  .left {
+    padding-right: 140px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-picture {
+    width: 300px;
+  }
+
+  .left {
+    padding-right: 100px;
+  }
+
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px 8px 16px;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-picture{
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 780px) {
+  .profile-picture {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
 }

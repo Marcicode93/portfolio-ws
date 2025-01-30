@@ -6,6 +6,10 @@ footer {
   padding-top: 80px;
   padding-bottom: 80px;
   border-top: 4px solid rgb(25, 203, 162);
+
+  a{
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -13,9 +17,10 @@ h1 {
 }
 
 .name_legal{
-  a{
-   margin-right: 12px;
-  }
+}
+
+#imprint{
+  margin-left: 12px;
 }
 
 .socials {
