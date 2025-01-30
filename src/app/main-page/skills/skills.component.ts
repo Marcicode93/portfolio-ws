@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
   defaultImage = 'assets/img/03_skills/Capa_1.png';
-  hoverImage = 'assets/img/03_skills/Capa_2.png';
+  hoverImage = 'assets/img/03_skills/Property 1=Group 19.png';
   currentImage = this.defaultImage;
 
   changeImage() {

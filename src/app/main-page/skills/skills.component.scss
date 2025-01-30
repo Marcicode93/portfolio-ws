@@ -56,6 +56,10 @@
   @include lightBlue();
 }
 
+.isHovered {
+  width: 500px;
+}
+
 .btn-primary {
   margin-top: 36px;
   @include primary;

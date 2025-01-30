@@ -49,12 +49,12 @@
         <img src="../../../assets/img/03_skills/Property 1=Scrum.png" alt="" />
         <p>Scrum</p>
       </div>
-      <div class="element"  (mouseover)="changeImage()" 
-      (mouseout)="resetImage()">
-        <img
-        [src]="currentImage"
-          alt=""
-        />
+      <div
+        class="element special"
+        (mouseover)="changeImage()"
+        (mouseout)="resetImage()"
+      >
+        <img [src]="currentImage" id="continually-img" alt="" />
         <p>Continually learning</p>
       </div>
     </div>

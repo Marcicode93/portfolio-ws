@@ -1,18 +1,18 @@
 <section class="reference">
-  <div class="element-wrapper">
-    <div class="element">
-      <p>
-        {{ references[currentIndex].text }}
-      </p>
-      <div class="line_name">
-        <div class="line"></div>
-        <p>{{ references[currentIndex].name }}</p>
+  <div class="reference-content">
+    <div class="element-wrapper">
+      <div class="element">
+        <p>{{ references[currentIndex].text }}</p>
+        <div class="line_name">
+          <div class="line"></div>
+          <p>{{ references[currentIndex].name }}</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="profile">
-    <img [src]="references[currentIndex].img" alt="picture-of-person" />
+    <div class="profile">
+      <img [src]="references[currentIndex].img" alt="picture-of-person" />
+    </div>
   </div>
 
   <div class="arrows">
