@@ -39,7 +39,7 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     this.formSubmitted=true;
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid &&this.isChecked && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -52,7 +52,7 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest &&this.isChecked) {
       ngForm.resetForm();
       this.formSubmitted=false;
     }

@@ -2,8 +2,7 @@ import { makeBindingParser } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
-import * as AOS from 'aos';
-
+// import * as AOS from 'aos';
 
 import {
   TranslateService,
@@ -18,10 +17,10 @@ import {
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit{
-
-  ngOnInit() {
-    AOS.init()}
+export class AppComponent {
+  // ngOnInit(): void {
+  // AOS.init();
+  // }
 
   title = 'folio';
   constructor(private translate: TranslateService) {
