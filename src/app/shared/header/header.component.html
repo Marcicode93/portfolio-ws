@@ -1,9 +1,13 @@
-<nav>
+<nav [class.scrolled]="isScrolled">
   <h1 id="header-name">Marcel</h1>
 
-  <div class="nav-links" id="hero">
-    <a href="#about-me">About me</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
+  <button class="burger-menu" (click)="toggleMenu()">
+    ☰
+  </button>
+
+  <div class="nav-links" id="hero" [class.open]="menuOpen">
+    <a href="#about-me" (click)="closeMenu()">About me</a>
+    <a href="#skills" (click)="closeMenu()">Skills</a>
+    <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
   </div>
 </nav>

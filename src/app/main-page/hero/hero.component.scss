@@ -3,6 +3,7 @@
 .hero-content {
   position: relative;
   height: 100vh;
+  margin-top: 100px;
   max-height: 700px;
   @include contentmax();
 }
