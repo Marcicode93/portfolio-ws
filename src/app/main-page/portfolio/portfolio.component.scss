@@ -80,3 +80,138 @@ button {
 .subtitle {
   @include darkBlue();
 }
+
+@media (max-width: 1200px) {
+  #portfolio {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headline,
+  .tagline,
+  .element {
+    justify-content: center;
+  }
+
+  .content-wrapper {
+    @include dF();
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tagline {
+    @include dF();
+    margin: 24px 0px 24px 0px;
+  }
+
+  .content-wrapper {
+    @include dF();
+    flex-direction: column;
+  }
+
+  .element img {
+    width: 500px;
+  }
+
+  .element {
+    flex-direction: column;
+
+    p {
+      margin-top: 24px;
+    }
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button {
+    margin-top: 24px;
+  }
+
+  .btn-left {
+    margin-top: 24px;
+  }
+
+  .btn-right {
+    justify-content: center;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .element img {
+    width: 400px !important;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px 8px 16px;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .left {
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 860px) {
+
+  .element img {
+    width: 300px !important;
+  }
+
+  .content {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}

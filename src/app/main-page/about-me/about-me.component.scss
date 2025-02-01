@@ -45,13 +45,18 @@ h1 {
   font-size: 76px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+
+  .content {
+    margin-top: -200px;
+  }
+
   .profile-picture {
     width: 380px;
   }
 
   .left {
-    padding-right: 140px;
+    padding-right: 100px;
   }
 
   h1 {
@@ -79,9 +84,8 @@ h1 {
   }
 
   .left {
-    padding-right: 100px;
+    padding-right: 40px;
   }
-
 
   h1 {
     font-size: 42px;
@@ -108,8 +112,12 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .profile-picture{
+  .profile-picture {
     width: 250px;
+  }
+
+  .left {
+    padding-right: 20px;
   }
 
   h1 {
@@ -132,9 +140,14 @@ h1 {
   }
 }
 
-@media (max-width: 780px) {
-  .profile-picture {
-    width: 300px;
+@media (max-width: 860px) {
+  .content {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+
+  .profile-picture{
+    display: none;
   }
 
   h1 {
@@ -154,5 +167,26 @@ h1 {
   .intro-text {
     font-size: 18px;
     margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .content {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 }

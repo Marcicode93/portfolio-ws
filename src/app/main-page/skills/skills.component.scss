@@ -56,10 +56,6 @@
   @include lightBlue();
 }
 
-.isHovered {
-  width: 500px;
-}
-
 .btn-primary {
   margin-top: 36px;
   @include primary;
@@ -78,13 +74,33 @@ img:hover {
 }
 
 @media (max-width: 1200px) {
+  .content {
+    margin-top: 60px;
+    @include pad();
+    @include dF(space-between, flex-end);
+    @include contentmax();
+  }
+  #skills .element p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .right {
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+  }
+
   .element img {
     max-width: 60px;
     transition: transform 0.3s ease-in-out;
   }
 
   .left {
-    padding-right: 80px;
+    padding-right: 40px;
+    gap: 60px;
   }
 
   h1 {
@@ -107,6 +123,11 @@ img:hover {
 }
 
 @media (max-width: 1000px) {
+  .content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .element img {
     max-width: 50px;
     transition: transform 0.3s ease-in-out;
@@ -117,7 +138,8 @@ img:hover {
   }
 
   .left {
-    padding-right: 60px;
+    padding-right: 20px;
+    gap: 40px;
   }
 
   h1 {
@@ -145,8 +167,76 @@ img:hover {
 }
 
 @media (max-width: 900px) {
-  .left {
-    padding-right: 40px;
+  .right,
+  .order {
+    @include dF();
+    flex-direction: column;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+    margin-bottom: 24px;
+    text-align: end;
+  }
+
+  .content {
+    flex-direction: column;
+
+    .right {
+      order: -2;
+
+      .last {
+        @include dF(flex-end, flex-end);
+        span,
+        p {
+          @include dF(flex-end, flex-end);
+          text-align: end;
+        }
+        flex-direction: column;
+        order: 10;
+      }
+    }
+
+    .left {
+      padding-right: 0px;
+      order: -1 !important;
+      gap: 20px;
+    }
+  }
+
+  .element img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+
+  .looking {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 700px) {
+
+  #skills .element p {
+    font-size: 16px;
+  }
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .element img {
@@ -156,12 +246,10 @@ img:hover {
 
   h1 {
     font-size: 32px;
-    letter-spacing: 4px;
   }
 
   h2 {
     font-size: 18px;
-    letter-spacing: 6px;
   }
 
   h3 {
@@ -174,28 +262,13 @@ img:hover {
   }
 }
 
-@media (max-width: 780px) {
-  .element img {
-    max-width: 20px;
-    transition: transform 0.3s ease-in-out;
+@media (max-width: 500px) {
+  .content {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  h1 {
-    font-size: 32px;
-    letter-spacing: 4px;
-  }
-
-  h2 {
-    font-size: 18px;
-    letter-spacing: 6px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .intro-text {
-    font-size: 18px;
-    margin-bottom: 48px;
+  .left {
+    gap: 16px;
   }
 }

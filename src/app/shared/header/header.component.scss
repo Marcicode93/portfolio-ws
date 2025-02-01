@@ -3,20 +3,13 @@
 nav {
   @include dF(space-between, center);
   @include pad();
-  margin-top: 30px;
-  position: fixed;
-  width: 90%;
-  top: 0;
-  transition: all 0.3s ease;
+  background-color: rgba(20, 29, 47, 1);
   z-index: 1000;
-
-  &.scrolled {
-    padding: 8px 20px;
-    width: 90%;
-    backdrop-filter: blur(5px);
-  }
-
+  width: 100%;
+  position: fixed;
+  top: 0;
   div {
+    margin-right: 150px;
     a {
       font-size: 23px;
       padding-right: 12px;
@@ -30,6 +23,7 @@ nav {
 }
 
 .burger-menu {
+  margin-right: 150px;
   display: none;
   font-size: 30px;
   background: none;
@@ -41,7 +35,11 @@ nav {
   font-size: 42px;
 }
 
-@media (max-width: 1000px) {
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
   nav {
     padding: 12px 20px;
 
@@ -54,11 +52,13 @@ nav {
       flex-direction: column;
       position: absolute;
       top: 60px;
-      left: 0;
-      width: 100%;
-      background: white;
+      right: 0; // Menü soll rechts bleiben
+      width: 200px;
+      height: 200px;
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
     }
 
     .nav-links.open {

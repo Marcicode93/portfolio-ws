@@ -143,7 +143,135 @@ button:disabled {
   height: auto; /* Erhält das Seitenverhältnis des Bildes */
   position: absolute; /* Falls du das Bild positionieren möchtest */
   bottom: 0; /* Positioniert das Bild am unteren Rand des Containers */
-  left: -10%;/* Oder andere Positionen je nach Bedarf */
-  top:350%;
+  left: -10%; /* Oder andere Positionen je nach Bedarf */
+  top: 350%;
+}
 
+@media (max-width: 1200px) {
+  .left {
+    margin-right: 60px;
+  }
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 24px;
+    letter-spacing: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .checkbox {
+    margin-bottom: 48px;
+  }
+
+  .left {
+    text-wrap: wrap;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+
+  .right {
+    @include dF();
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .elements {
+    @include dF();
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+  }
+
+  .input-field {
+    border-radius: 8px;
+    width: 400px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+  }
+
+  .left {
+    padding-right: 60px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px 8px 16px;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .input-field {
+    border-radius: 8px;
+    width: 360px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-field {
+    border-radius: 8px;
+    width: 260px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
 }

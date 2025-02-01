@@ -7,7 +7,7 @@ footer {
   padding-bottom: 80px;
   border-top: 4px solid rgb(25, 203, 162);
 
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -16,10 +16,7 @@ h1 {
   font-size: 42px;
 }
 
-.name_legal{
-}
-
-#imprint{
+#imprint {
   margin-left: 12px;
 }
 
@@ -29,5 +26,48 @@ h1 {
     width: 20px;
     height: 20px;
     padding-right: 24px;
+  }
+}
+@media (max-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert alles horizontal */
+    justify-content: center; /* Zentriert alles vertikal */
+    text-align: center;
+    padding: 40px;
+    border-top: 4px solid rgb(25, 203, 162);
+  }
+  
+
+  h1, h2, h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row; /* Icons nebeneinander */
+    justify-content: center; /* Icons horizontal zentrieren */
+    align-items: center; /* Falls die Icons unterschiedliche Höhen haben */
+    gap: 16px; /* Abstand zwischen den Icons */
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 20px;
+  }
+  
+
+  .socials img {
+    display: block;
+    width: 20px;
+    height: 20px;
   }
 }

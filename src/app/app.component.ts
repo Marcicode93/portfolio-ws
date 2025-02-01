@@ -1,8 +1,8 @@
 import { makeBindingParser } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
-// import * as AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   TranslateService,
@@ -18,9 +18,6 @@ import {
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  // ngOnInit(): void {
-  // AOS.init();
-  // }
 
   title = 'folio';
   constructor(private translate: TranslateService) {
