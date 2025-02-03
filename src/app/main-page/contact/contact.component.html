@@ -2,16 +2,14 @@
   <div class="content">
     <div class="headline">
       <div class="line"></div>
-      <h1>Contact</h1>
+      <h1>{{'contact.contact' | translate}}</h1>
     </div>
 
     <div class="elements">
       <div class="left">
-        <span class="subtitle">Got a problem to solve?</span>
+        <span class="subtitle">{{'contact.tagline' | translate}}</span>
         <p>
-          Contact me through this form, I am interested in hearing from you,
-          knowing your ideas and contributing to your projects with my work.
-          Need a Frontend developer? Contact me!
+          {{'contact.text' | translate}}
         </p>
       </div>
       <div class="right">
@@ -75,10 +73,7 @@
             />
             }
 
-            <p>
-              I've read the <a href="data-privacy">privacy policy</a> and agree
-              to the processing of my data as outlined.
-            </p>
+            <p [innerHTML]="'contact.privacy' | translate"></p>
             @if (formSubmitted && !isChecked) {
             <p class="error-message" style="color: red">
               Please accept the privacy policy.
@@ -87,7 +82,7 @@
           </div>
           <button
             type="submit"
-            [disabled]="contactForm.invalid"
+            [disabled]="contactForm.invalid || !isChecked"
             class="btn-primary"
           >
             Send message!

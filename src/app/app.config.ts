@@ -10,8 +10,6 @@ const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (
   http: HttpClient
 ) => new TranslateHttpLoader(http, '../assets/i18n/', '.json');
 
-
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),

@@ -6,8 +6,10 @@
   </button>
 
   <div class="nav-links" id="hero" [class.open]="menuOpen">
-    <a href="#about-me" (click)="closeMenu()">About me</a>
+    <a href="#about-me" (click)="closeMenu()">{{'hero.about me' | translate}}</a>
     <a href="#skills" (click)="closeMenu()">Skills</a>
     <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
+    <button (click)="changeLanguage('de')" class="flag-btn"><img src="../../../assets/img/01_hero/323332.png" alt="germanny-flag" class="flag-img"></button>
+    <button (click)="changeLanguage('en')" class="flag-btn"><img src="../../../assets/img/01_hero/United-kingdom_flag_icon_round.svg.png" alt="uk-flag" class="flag-img"></button>
   </div>
 </nav>

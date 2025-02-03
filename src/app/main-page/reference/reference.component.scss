@@ -50,6 +50,24 @@
       border-radius: 20px;
     }
   }
+
+  @media (max-width: 800px) {
+    .element-wrapper {
+      max-width: 360px;
+      padding: 60px 20px;
+      border: 2px solid rgb(25, 203, 162);
+      border-radius: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .element-wrapper {
+      max-width: 240px;
+      padding: 60px 20px;
+      border: 2px solid rgb(25, 203, 162);
+      border-radius: 20px;
+    }
+  }
 }
 
 .element-wrapper {
@@ -150,6 +168,18 @@
   }
 
   @media (max-width: 900px) {
+    .left {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .element-wrapper {
+      width: 280px !important;
+      padding: 10px 20px;
+      border: 2px solid rgb(25, 203, 162);
+      border-radius: 20px;
+    }
+
     h1 {
       font-size: 32px;
       letter-spacing: 4px;

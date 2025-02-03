@@ -38,6 +38,7 @@
 
 .element {
   @include dF();
+  width: 900px;
 
   p {
     margin-top: 24px;
@@ -59,6 +60,7 @@
 .btn-right {
   @include bg-colour();
   border: 2px solid rgba(75, 71, 255, 1);
+  margin-left: 36px;
 
   &:hover {
     background-color: rgba(75, 71, 255, 1);
@@ -71,7 +73,7 @@
 
 button {
   margin-top: 12px;
-  margin-right: 80px;
+  // margin-right: 80px;
   a {
     text-decoration: none;
   }
@@ -105,6 +107,7 @@ button {
   .tagline {
     @include dF();
     margin: 24px 0px 24px 0px;
+    text-align: center;
   }
 
   .content-wrapper {
@@ -140,6 +143,11 @@ button {
     margin-top: 24px;
   }
 
+  .btn {
+    @include dF();
+    gap: 24px;
+  }
+
   .btn-left {
     margin-top: 24px;
   }
@@ -151,7 +159,6 @@ button {
 }
 
 @media (max-width: 1000px) {
-
   .element img {
     width: 400px !important;
   }
@@ -170,11 +177,15 @@ button {
 
   .btn-primary {
     padding: 8px 16px 8px 16px;
-    margin-top: -30px;
   }
 }
 
 @media (max-width: 900px) {
+
+  .element{
+    width: 700px;
+  }
+
   .left {
     padding-right: 20px;
   }
@@ -193,7 +204,6 @@ button {
 }
 
 @media (max-width: 860px) {
-
   .element img {
     width: 300px !important;
   }
@@ -201,6 +211,61 @@ button {
   .content {
     padding-left: 60px !important;
     padding-right: 60px !important;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .element {
+    width: 500px;
+  }
+
+  .content {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .tagline {
+    width: 280px;
+    text-align: center;
+  }
+
+  .element img {
+    width: 300px !important;
+  }
+
+  .element {
+    width: 300px;
+  }
+
+  .content {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   h1 {

@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-reference',
@@ -7,7 +14,11 @@ import { Component } from '@angular/core';
   templateUrl: './reference.component.html',
   styleUrl: './reference.component.scss',
 })
-export class ReferenceComponent {
+export class ReferenceComponent implements OnInit {
+  ngOnInit(): void {
+    AOS.init();
+  }
+
   references = [
     {
       img: '../../../assets/img/02_about/marcel ellipse fin.png',
@@ -39,4 +50,10 @@ export class ReferenceComponent {
     this.currentIndex =
       (this.currentIndex - 1 + this.references.length) % this.references.length;
   }
+
+  constructor(private translate: TranslateService) {}
+  changeLanguage(language: string) {
+    this.translate.use(language);
+  }
+
 }

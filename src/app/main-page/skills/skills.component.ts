@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import AOS from "aos";
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
+
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateDirective, TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })
 export class SkillsComponent implements OnInit {
-
-  ngOnInit():void{
+  ngOnInit(): void {
     AOS.init();
   }
 
@@ -25,5 +30,10 @@ export class SkillsComponent implements OnInit {
 
   resetImage() {
     this.currentImage = this.defaultImage;
+  }
+
+  constructor(private translate: TranslateService) {}
+  changeLanguage(language: string) {
+    this.translate.use(language);
   }
 }

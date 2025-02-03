@@ -1,11 +1,17 @@
 import { Component, HostListener } from '@angular/core';
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   menuOpen = false;
@@ -17,6 +23,11 @@ export class HeaderComponent {
 
   closeMenu() {
     this.menuOpen = false;
+  }
+
+  constructor(private translate: TranslateService) {}
+  changeLanguage(language: string) {
+    this.translate.use(language);
   }
 
   @HostListener('window:scroll', [])

@@ -1,5 +1,12 @@
-import { Component} from '@angular/core';
-import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
+
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-about-me',
@@ -8,6 +15,12 @@ import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss',
 })
-export class AboutMeComponent{
-
+export class AboutMeComponent implements OnInit {
+  ngOnInit(): void {
+    AOS.init();
+  }
+  constructor(private translate: TranslateService) {}
+  changeLanguage(language: string) {
+    this.translate.use(language);
+  }
 }

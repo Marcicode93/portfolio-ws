@@ -177,6 +177,10 @@ img:hover {
     text-align: end;
   }
 
+  span{
+    padding-left: 8px;
+  }
+
   .content {
     flex-direction: column;
 
@@ -194,12 +198,15 @@ img:hover {
         order: 10;
       }
     }
-
     .left {
       padding-right: 0px;
-      order: -1 !important;
+      order: 0 !important;
       gap: 20px;
     }
+  }
+
+  .last{
+    order: -17;
   }
 
   .element img {
@@ -230,13 +237,12 @@ img:hover {
 }
 
 @media (max-width: 700px) {
-
   #skills .element p {
     font-size: 16px;
   }
   .content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .element img {
@@ -263,12 +269,22 @@ img:hover {
 }
 
 @media (max-width: 500px) {
-  .content {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .left {
     gap: 16px;
   }
+
+  .looking,
+  .another {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .another {
+    gap: 12px !important;
+  }
+
+  span{
+    padding-left: 6px;
+  }
+
 }

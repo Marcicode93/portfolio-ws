@@ -1,6 +1,48 @@
 {
-    "app": {
-      "hallo": "Guten Tag {{value}}",
-      "title": "Übersetzung Deutsch"
-    }
+  "hero": {
+    "about me": "Über Mich",
+    "talk": "Sprechen wir!"
+  },
+
+  "about-me": {
+    "headline": "Über Mich",
+    "sub-text": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Spezialisierung auf Angular. Mein Ziel ist es, moderne, leistungsstarke und benutzerfreundliche Webanwendungen zu entwickeln. Ich liebe es, komplexe Herausforderungen zu lösen und mein Wissen stetig zu erweitern. Lass uns gemeinsam großartige Anwendungen erstellen!",
+    "table-text1": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Spezialisierung auf Angular. Mein Ziel ist es, moderne, leistungsstarke und benutzerfreundliche Webanwendungen zu entwickeln. Ich liebe es, komplexe Herausforderungen zu lösen und mein Wissen stetig zu erweitern. Lass uns gemeinsam großartige Anwendungen erstellen!",
+    "table-text2": "Ich komme aus Donaueschingen und bin offen für einen Umzug, wenn sich eine spannende Jobmöglichkeit bietet. Gleichzeitig schätze ich Remote-Arbeit und die Flexibilität, die sie mit sich bringt, sehr.",
+    "table-text3": "bblasdhlsdjhflksdjflksjdlkfjsdklfjsdlkfjsdklfjklsdfjklsdfjklsdjfklsdjf"
+  },
+
+  "my-skills": {
+    "headline": "Meine Fähigkeiten",
+    "sub-text": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
+    "sub-text2": "Suchen Sie nach einer weiteren Fähigkeit?",
+    "contact": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erläutern.",
+    "btn": "Kontaktieren Sie mich"
+  },
+
+  "portfolio": {
+    "tagline": "Entdecken Sie hier eine Auswahl meiner Arbeiten – schauen Sie diese Projekte an, um meine Fähigkeiten in Aktion zu sehen.",
+    "join": "Bla bsjkldfjasdljlk blöasfjlasfj balsfjl deutsch",
+    "el-pollo-loco": "sdjklajskljsdlkfjalkdsjlkf deutsch",
+    "pokedex": "Basierend auf der PokéAPI – einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+  },
+
+  "reference": {
+    "text1": "bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla deutsch",
+    "text2": "jdskljaldkfjalksdfj lkjasddsjlkfj lsdjflk deutsch",
+    "text3": "dsjklfjsdlkfjdslkjdslkfjlksd jhjjhewklrjelwkjr lkjsfdlkjflkjs bla deutsch"
+  },
+
+  "contact": {
+    "contact": "Kontakt",
+    "tagline": "Gibt es ein Problem zu lösen?",
+    "text": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen. Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!",
+    "privacy": "Ich habe die <a href=\"data-privacy\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "submit": "Absenden!"
+  },
+
+  "footer": {
+    "legal-notice": "Datenschutzerklärung",
+    "imprint": "Impressum"
   }
+}

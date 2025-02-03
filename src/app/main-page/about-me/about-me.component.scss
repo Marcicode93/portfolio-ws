@@ -47,9 +47,8 @@ h1 {
 }
 
 @media (max-width: 1400px) {
-
   .content {
-    margin-top: -200px;
+    margin-top: -400px;
   }
 
   .profile-picture {
@@ -76,6 +75,54 @@ h1 {
   .intro-text {
     font-size: 24px;
     margin-bottom: 68px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    margin-top: -600px !important;
+  }
+}
+
+@media (max-width: 1400px) and (max-height: 1000px) {
+  .content {
+    margin-top: -100px !important;
+  }
+}
+
+@media (max-width: 1400px) and (max-height: 760px) {
+  .content {
+    margin-top: -100px !important;
+  }
+}
+
+@media (max-width: 1200px) and (max-height: 860px) {
+  .content {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 1100px) and (max-height: 1400px) {
+  .content {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 870px) and (max-height: 1200px) {
+  .content {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 760px) {
+  .content {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 1240px) {
+  .content {
+    margin-top: -200px !important;
   }
 }
 
@@ -147,7 +194,7 @@ h1 {
     padding-right: 60px !important;
   }
 
-  .profile-picture{
+  .profile-picture {
     display: none;
   }
 
@@ -172,12 +219,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
-
   .content {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-
 
   h1 {
     font-size: 32px;
@@ -189,5 +234,35 @@ h1 {
 
   h3 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 440px) and (max-height: 940px) {
+  .content {
+    margin-top: -500px !important;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 700px) {
+  .content {
+    margin-top: -400px !important;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 720px){
+  .content {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 460px) and (max-height: 720px){
+  .content {
+    margin-top: 120px !important;
+  }
+}
+
+@media (max-width: 440px) and (max-height: 720px){
+  .content {
+    margin-top: -400px !important;
   }
 }

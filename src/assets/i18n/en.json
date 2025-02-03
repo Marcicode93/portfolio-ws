@@ -1,6 +1,48 @@
 {
-    "app": {
-      "hello": "hello {{value}}",
-      "title": "Translation Demo"
-    }
+  "hero": {
+    "about me": "About me",
+    "talk": "Let's talk!"
+  },
+
+  "about-me": {
+    "headline": "About me",
+    "sub-text": "I’m a passionate frontend developer specializing in Angular. My goal is to build modern, high-performance, and user-friendly web applications. I love solving complex challenges, and continuously expanding my knowledge. Let’s build amazing applications together!",
+    "table-text1": "I'm from Donaueschingen and open to relocating for an exciting job opportunity. At the same time, I highly value remote work and the flexibility it offers.",
+    "table-text2": "I'm open-minded and flexible, able to adapt to various situations with ease. I love learning new things and continuously expanding my skills to stay ahead",
+    "table-text3": "bblasdhlsdjhflksdjflksjdlkfjsdklfjsdlkfjsdklfjklsdfjklsdfjklsdjfklsdjf englisch"
+  },
+
+  "my-skills": {
+    "headline": "My skills",
+    "sub-text": "I have gained experience in building projects with different frontend technologies and concepts.",
+    "sub-text2": "Looking for another skill?",
+    "contact": "Feel free to contact me. I look forward to expanding my previous knowledge.",
+    "btn": "Get in touch"
+  },
+
+  "portfolio": {
+    "tagline": "Explore a selection of my work here - check out these projects to see my skills in action.",
+    "join": "Bla bsjkldfjasdljlk blöasfjlasfj balsfjl english",
+    "el-pollo-loco": "sdjklajskljsdlkfjalkdsjlkf english",
+    "pokedex": "Based on the PokéAPI - a simple library that provides and catalogues pokémon information."
+  },
+
+  "reference": {
+    "text1": "bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla english",
+    "text2": "jdskljaldkfjalksdfj lkjasddsjlkfj lsdjflk english",
+    "text3": "dsjklfjsdlkfjdslkjdslkfjlksd jhjjhewklrjelwkjr lkjsfdlkjflkjs bla english"
+  },
+
+  "contact": {
+    "contact": "Contact",
+    "tagline": "Got a problem to solve?",
+    "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work. Need a Frontend developer? Contact me!",
+    "privacy": "I've read the <a href=\"data-privacy\">privacy policy</a> and agree to the processing of my data as outlined.",
+    "submit": "Send message!"
+  },
+
+  "footer": {
+    "legal-notice": "Legal Notice",
+    "imprint": "Imprint"
   }
+}

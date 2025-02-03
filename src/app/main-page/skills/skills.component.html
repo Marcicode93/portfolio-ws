@@ -63,16 +63,15 @@
         (mouseout)="resetImage()"
       >
         <img [src]="currentImage" id="continually-img" alt="" />
-        <p>Continually learning</p>
+        <p>Learning</p>
       </div>
     </div>
     <div class="right">
       <div class="order">
-        <h1>My skills</h1>
+        <h1>{{ "my-skills.headline" | translate }}</h1>
 
         <p>
-          I have gained experience in building projects with different frontend
-          technologies and concepts.
+          {{ "my-skills.sub-text" | translate }}
         </p>
       </div>
       <br />
@@ -82,10 +81,11 @@
           >Looking for <span class="another">another skill</span>?</span
         >
         <p>
-          Feel free to contact me. I look forward to expanding my previous
-          knowledge.
+          {{ "my-skills.contact" | translate }}
         </p>
-        <button class="btn-primary"><a href="#contact">Get in touch</a></button>
+        <button class="btn-primary">
+          <a href="#contact"> {{ "my-skills.btn" | translate }}</a>
+        </button>
       </div>
     </div>
   </div>

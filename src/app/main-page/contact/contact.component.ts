@@ -1,15 +1,26 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateDirective, TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  ngOnInit(): void {
+    AOS.init();
+  }
+
   isChecked: boolean = false;
   contactData = {
     name: '',
@@ -38,8 +49,13 @@ export class ContactComponent {
   }
 
   onSubmit(ngForm: NgForm) {
-    this.formSubmitted=true;
-    if (ngForm.submitted && ngForm.form.valid &&this.isChecked && !this.mailTest) {
+    this.formSubmitted = true;
+    if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      this.isChecked &&
+      !this.mailTest
+    ) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -50,11 +66,21 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.log('Data sent: ', this.contactData),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest &&this.isChecked) {
+    } else if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      this.mailTest &&
+      this.isChecked
+    ) {
       ngForm.resetForm();
-      this.formSubmitted=false;
+      this.formSubmitted = false;
     }
+  }
+
+  constructor(private translate: TranslateService) {}
+  changeLanguage(language: string) {
+    this.translate.use(language);
   }
 }
