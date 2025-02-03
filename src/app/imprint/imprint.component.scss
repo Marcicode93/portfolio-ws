@@ -1,5 +1,8 @@
+@import "../../styles.scss";
+
 main {
     display: flex;
+    @include contentmax();
     flex: 1;
     flex-direction: column;
     justify-content: center;

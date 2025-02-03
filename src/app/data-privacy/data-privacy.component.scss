@@ -3,6 +3,7 @@
 .content{
     @include dF();
     @include pad();
+    @include contentmax();
     flex-direction: column;
     margin-top: 48px;
     margin-bottom: 48px;
