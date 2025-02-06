@@ -7,23 +7,24 @@
   "about-me": {
     "headline": "Über Mich",
     "sub-text": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Spezialisierung auf Angular. Mein Ziel ist es, moderne, leistungsstarke und benutzerfreundliche Webanwendungen zu entwickeln. Ich liebe es, komplexe Herausforderungen zu lösen und mein Wissen stetig zu erweitern. Lass uns gemeinsam großartige Anwendungen erstellen!",
-    "table-text1": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Spezialisierung auf Angular. Mein Ziel ist es, moderne, leistungsstarke und benutzerfreundliche Webanwendungen zu entwickeln. Ich liebe es, komplexe Herausforderungen zu lösen und mein Wissen stetig zu erweitern. Lass uns gemeinsam großartige Anwendungen erstellen!",
-    "table-text2": "Ich komme aus Donaueschingen und bin offen für einen Umzug, wenn sich eine spannende Jobmöglichkeit bietet. Gleichzeitig schätze ich Remote-Arbeit und die Flexibilität, die sie mit sich bringt, sehr.",
-    "table-text3": "bblasdhlsdjhflksdjflksjdlkfjsdklfjsdlkfjsdklfjklsdfjklsdfjklsdjfklsdjf"
+    "table-text1": "Ich komme aus Donaueschingen und bin offen für einen Umzug, wenn sich eine spannende Jobmöglichkeit bietet. Gleichzeitig schätze ich Remote-Arbeit und die Flexibilität, die sie mit sich bringt, sehr.",
+    "table-text2": "Ich mag es, komplexe Aufgabenstellungen zu lösen und flexibel zu denken.",
+    "table-text3": "Ich mag Puzzle."
   },
 
   "my-skills": {
     "headline": "Meine Fähigkeiten",
     "sub-text": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
-    "sub-text2": "Suchen Sie nach einer weiteren Fähigkeit?",
+    "sub-text2": "Suchen Sie nach",
+    "sub-text3": " einer weiteren Fähigkeit",
     "contact": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erläutern.",
     "btn": "Kontaktieren Sie mich"
   },
 
   "portfolio": {
     "tagline": "Entdecken Sie hier eine Auswahl meiner Arbeiten – schauen Sie diese Projekte an, um meine Fähigkeiten in Aktion zu sehen.",
-    "join": "Bla bsjkldfjasdljlk blöasfjlasfj balsfjl deutsch",
-    "el-pollo-loco": "sdjklajskljsdlkfjalkdsjlkf deutsch",
+    "join": "Join – Ein leistungsstarkes Projektmanagement-Tool, das dir hilft, Teams und Projekte effizient zu organisieren. Mit Funktionen wie Kanban-Boards, Aufgabenverteilung und Fortschrittsverfolgung ermöglicht es dir, Projekte von Anfang bis Ende zu steuern, die Zusammenarbeit zu fördern und Deadlines einzuhalten.",
+    "el-pollo-loco": "El Pollo Loco – Hilf Pepe Peligroso, sich durch eine verrückte Welt voller Hühner zu kämpfen, um dem ultimativen Boss gegenüberzutreten: Don Pollo Supremo, das riesige Huhn! Weiche Feinden aus und besiege das große Huhn, um zu überleben!",
     "pokedex": "Basierend auf der PokéAPI – einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
   },
 

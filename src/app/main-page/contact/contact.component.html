@@ -1,4 +1,4 @@
-<section id="contact">
+<section data-aos='fade-left'>
   <div class="content">
     <div class="headline">
       <div class="line"></div>
@@ -14,6 +14,7 @@
       </div>
       <div class="right">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <label class="label">Name:</label>
           <input
             [(ngModel)]="contactData.name"
             name="name"
@@ -26,6 +27,7 @@
           <div class="error">
             @if (nameField.invalid && nameField.touched) { Name is required. }
           </div>
+          <label class="label">Email:</label>
           <input
             [(ngModel)]="contactData.email"
             name="email"
@@ -40,6 +42,7 @@
             @if (emailField.invalid && emailField.touched) { Email is required.
             }
           </div>
+          <label class="label">Message:</label>
           <textarea
             minlength="4"
             [(ngModel)]="contactData.message"
@@ -73,7 +76,7 @@
             />
             }
 
-            <p [innerHTML]="'contact.privacy' | translate"></p>
+            <p [innerHTML]="'contact.privacy' | translate">{{'contact.privacy1' | translate}}</p>
             @if (formSubmitted && !isChecked) {
             <p class="error-message" style="color: red">
               Please accept the privacy policy.
@@ -87,6 +90,9 @@
           >
             Send message!
           </button>
+          @if (messageSent) {
+            <span class="success-message">hat geklappt</span>
+        }
         </form>
       </div>
     </div>

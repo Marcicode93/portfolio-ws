@@ -28,6 +28,8 @@ export class ContactComponent {
     message: '',
   };
 
+  messageSent: boolean = false;
+
   http = inject(HttpClient);
 
   mailTest = true;
@@ -53,8 +55,7 @@ export class ContactComponent {
     if (
       ngForm.submitted &&
       ngForm.form.valid &&
-      this.isChecked &&
-      !this.mailTest
+      this.isChecked
     ) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
@@ -62,6 +63,8 @@ export class ContactComponent {
           next: (response) => {
             ngForm.resetForm();
             this.formSubmitted = false;
+            this.messageSent = true; 
+            setTimeout(() => this.messageSent = false, 5000);
           },
           error: (error) => {
             console.error(error);
@@ -71,8 +74,7 @@ export class ContactComponent {
     } else if (
       ngForm.submitted &&
       ngForm.form.valid &&
-      this.mailTest &&
-      this.isChecked
+      !this.isChecked
     ) {
       ngForm.resetForm();
       this.formSubmitted = false;

@@ -1,4 +1,4 @@
-<section id="skills">
+<section id="skills" data-aos='fade-left'>
   <div class="content" data-aos="”fade-right”">
     <div class="left">
       <div class="element">
@@ -71,20 +71,20 @@
         <h1>{{ "my-skills.headline" | translate }}</h1>
 
         <p>
-          {{ "my-skills.sub-text" | translate }}
+        
         </p>
       </div>
       <br />
 
       <div class="last">
-        <span class="looking"
-          >Looking for <span class="another">another skill</span>?</span
-        >
+        <span class="looking" >{{ "my-skills.sub-text2" | translate }}</span>
+        <span class="another">{{ "my-skills.sub-text3" | translate }}</span>
+        <span class="looking">?</span>
         <p>
           {{ "my-skills.contact" | translate }}
         </p>
         <button class="btn-primary">
-          <a href="#contact"> {{ "my-skills.btn" | translate }}</a>
+          <a href="#contact-section"> {{ "my-skills.btn" | translate }}</a>
         </button>
       </div>
     </div>

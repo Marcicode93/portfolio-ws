@@ -133,10 +133,6 @@ img:hover {
     transition: transform 0.3s ease-in-out;
   }
 
-  .btn-primary {
-    margin-top: 48px !important;
-  }
-
   .left {
     padding-right: 20px;
     gap: 40px;
@@ -162,11 +158,12 @@ img:hover {
 
   .btn-primary {
     padding: 8px 16px 8px 16px;
-    margin-top: -30px;
+    margin-top: 24px !important;
+    margin-bottom: 24px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .right,
   .order {
     @include dF();
@@ -177,7 +174,17 @@ img:hover {
     text-align: end;
   }
 
-  span{
+  .btn-primary {
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  span {
     padding-left: 8px;
   }
 
@@ -205,7 +212,7 @@ img:hover {
     }
   }
 
-  .last{
+  .last {
     order: -17;
   }
 
@@ -283,8 +290,7 @@ img:hover {
     gap: 12px !important;
   }
 
-  span{
+  span {
     padding-left: 6px;
   }
-
 }

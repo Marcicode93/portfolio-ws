@@ -1,4 +1,4 @@
-@import 'aos/dist/aos.css';
+@import "aos/dist/aos.css";
 
 @mixin bg-colour() {
   background-color: rgba(20, 29, 47, 1);
@@ -12,11 +12,12 @@
     transform: scale(1.05);
     transition: all 250ms ease-in-out;
     box-shadow: 0 1px 8px rgba(255, 254, 254, 0.8);
+    cursor: pointer;
   }
 
   &:active {
-    transform: scale(0.95); 
-    box-shadow: 0 2px 4px rgb(255, 255, 255); 
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
   }
 }
 
@@ -57,31 +58,31 @@
   color: rgba(28, 230, 182, 1);
 }
 
-* {
+body,
+html {
   margin: 0;
   font-family: "Poppins";
   font-size: 16px;
   color: white;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include bg-colour();
 }
 
-@mixin contentmax(){
+// * {
+//   outline: 1px solid red;
+// }
+
+@mixin contentmax() {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
 
-html{
-  overflow-x: hidden;
-}
-
-body {
-  @include bg-colour();
-  overflow-x: hidden;
-}
-
 a {
   cursor: pointer;
+  color: white;
   &:hover {
     cursor: pointer;
   }
@@ -150,22 +151,39 @@ h3 {
   padding: 10px 20px 10px 20px;
   border-radius: 8px;
   border: none;
+  color: white;
 
   &:hover {
     cursor: pointer;
   }
 }
 
-@media (max-width: 1200px){
-  h1{
+a:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  h1 {
     font-size: 56px;
   }
 
-  h2{
+  h2 {
     font-size: 24px;
   }
 
-  h3{
+  h3 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .btn-primary {
+    padding: 20px 40px 20px 40px;
+    border-radius: 8px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

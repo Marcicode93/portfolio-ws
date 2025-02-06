@@ -1,24 +1,23 @@
-<section id="about-me">
-  <div class="content" data-aos=”fade-right”>
+<section>
+  <div class="content" data-aos="fade-right">
     <div class="left">
       <div class="info">
-        <h1>{{'about-me.headline' | translate}}</h1>
-        I’m a passionate frontend developer specializing in Angular. My goal is
-        to build modern, high-performance, and user-friendly web applications. I
-        love solving complex challenges, and continuously expanding my
-        knowledge. Let’s build amazing applications together!
+        <h1>{{ "about-me.headline" | translate }}</h1>
+        <p>{{ "about-me.sub-text" | translate }}</p>
         <br />
 
         <table>
           <tr>
             <td>
-              <img src="../../../assets/img/02_about/place.png" alt="location-icon" class="first-img" />
+              <img
+                src="../../../assets/img/02_about/place.png"
+                alt="location-icon"
+                class="first-img"
+              />
             </td>
             <td>
               <p>
-                I'm from Donaueschingen and open to relocating for an exciting
-                job opportunity. At the same time, I highly value remote work
-                and the flexibility it offers.
+                {{ "about-me.table-text1" | translate }}
               </p>
             </td>
           </tr>
@@ -31,9 +30,7 @@
             </td>
             <td>
               <p>
-                I'm open-minded and flexible, able to adapt to various
-                situations with ease. I love learning new things and
-                continuously expanding my skills to stay ahead
+                {{ "about-me.table-text2" | translate }}
               </p>
             </td>
           </tr>
@@ -46,9 +43,7 @@
             </td>
             <td>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus eius expedita veniam odit amet officiis quia
-                delectus facere ratione ullam.
+                {{ "about-me.table-text3" | translate }}
               </p>
             </td>
           </tr>
@@ -57,7 +52,11 @@
     </div>
 
     <div class="right">
-      <img class="profile-picture" src="../../../assets/img/02_about/marcel ellipse fin.png" alt="" />
+      <img
+        class="profile-picture"
+        src="../../../assets/img/02_about/marcel ellipse fin.png"
+        alt=""
+      />
     </div>
   </div>
 </section>

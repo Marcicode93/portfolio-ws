@@ -57,6 +57,10 @@
   }
 }
 
+button{
+  color: white;
+}
+
 .btn-right {
   @include bg-colour();
   border: 2px solid rgba(75, 71, 255, 1);
@@ -73,7 +77,6 @@
 
 button {
   margin-top: 12px;
-  // margin-right: 80px;
   a {
     text-decoration: none;
   }
@@ -108,11 +111,6 @@ button {
     @include dF();
     margin: 24px 0px 24px 0px;
     text-align: center;
-  }
-
-  .content-wrapper {
-    @include dF();
-    flex-direction: column;
   }
 
   .element img {
@@ -181,8 +179,7 @@ button {
 }
 
 @media (max-width: 900px) {
-
-  .element{
+  .element {
     width: 700px;
   }
 
@@ -232,8 +229,8 @@ button {
   }
 
   .content {
-    padding-left: 60px !important;
-    padding-right: 60px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 
   h1 {
