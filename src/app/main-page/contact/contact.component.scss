@@ -86,9 +86,9 @@ textarea {
 
 .label {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: flex-start;
-  width:500px; 
+  width: 500px;
 }
 
 button:disabled {
@@ -194,7 +194,7 @@ button:disabled {
   }
 
   .label {
-    width:500px; 
+    width: 500px;
   }
 }
 
@@ -204,7 +204,7 @@ button:disabled {
   }
 
   .label {
-    width:400px; 
+    width: 400px;
   }
 
   .left {
@@ -267,13 +267,14 @@ button:disabled {
     padding: 10px 40px 10px 40px;
     border-radius: 8px;
     border: none;
-  
+
     &:hover {
       cursor: pointer;
-    }}
+    }
+  }
 
   .label {
-    width:380px; 
+    width: 380px;
   }
 
   h1 {
@@ -314,7 +315,7 @@ button:disabled {
   }
 
   .label {
-    width:280px; 
+    width: 280px;
   }
 
   h1 {

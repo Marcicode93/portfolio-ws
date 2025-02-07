@@ -43,7 +43,7 @@
 .btn-container {
   display: flex;
   justify-content: center;
-  margin-top: -30px;
+  margin-top: -10px;
   margin-left: -20px;
 }
 
@@ -120,6 +120,9 @@ h2 {
   .hero-name {
     margin-right: 200px;
   }
+  .hero-picture {
+    bottom: 220px;
+  }
 }
 
 @media (max-width: 1740px) {
@@ -136,6 +139,10 @@ h2 {
 
   .hero-name {
     margin-right: 100px;
+  }
+
+  .intro-text {
+    margin-bottom: 90px;
   }
 }
 
@@ -154,7 +161,7 @@ h2 {
   }
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1590px) {
   .hero-picture {
     width: 380px;
     bottom: 100px;
@@ -186,49 +193,7 @@ h2 {
   }
 }
 
-@media (max-width: 1420px) {
-  .hero-content {
-    margin-top: 100px;
-  }
-
-  .hero-wrapper {
-    margin-bottom: 60px;
-  }
-
-  .hero-picture {
-    width: 360px;
-  }
-
-  .hero-name {
-    margin-right: 80px;
-  }
-
-  h1 {
-    font-size: 42px;
-  }
-
-  h2 {
-    font-size: 24px;
-    letter-spacing: 8px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  .intro-text {
-    font-size: 24px;
-    margin-bottom: 50px;
-    margin-right: -16px;
-  }
-
-  .btn-primary {
-    padding: 8px 16px 8px 16px;
-    margin-top: -30px;
-  }
-}
-
-@media (max-width: 1340px) {
+@media (max-width: 1490px) {
   .hero-content {
     margin-top: 0px;
   }
@@ -263,6 +228,7 @@ h2 {
   .intro-text {
     font-size: 24px;
     margin-bottom: 90px;
+    margin-right: 2px;
   }
 
   .btn-primary {
@@ -292,7 +258,7 @@ h2 {
 
   .intro-text {
     font-size: 18px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 960px) {
@@ -346,7 +312,7 @@ h2 {
   .hero-content {
     background-size: 1580px;
     min-height: 800px;
-    margin-top: -100px;
+    margin-top: 0px;
     background-size: 1400px;
   }
 
@@ -396,7 +362,7 @@ h2 {
 
   .hero-content {
     height: 100vh;
-    margin-top: -100px;
+    margin-top: 0px;
     max-height: 600px;
     min-height: 700px;
   }
@@ -408,7 +374,7 @@ h2 {
   }
 
   .hero-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     bottom: 20px;
   }
 
@@ -431,7 +397,7 @@ h2 {
 
   .intro-text {
     font-size: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     margin-right: -18px;
   }
 
@@ -443,25 +409,25 @@ h2 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
   .hero-name {
     margin-right: 0px;
     width: 400px;
   }
 
   .hero-content {
-    margin-top: -100px;
+    margin-top: 0px;
   }
 
   .hero-picture {
-    width: 200px;
+    width: 240px;
     margin-bottom: 40px;
     margin-left: 0px;
   }
 
   .hero-wrapper {
-    margin-bottom: 140px;
-    bottom: -40px;
+    margin-bottom: 100px;
+    bottom: 20px;
   }
 
   h1 {
@@ -499,13 +465,14 @@ h2 {
   }
 
   .hero-picture {
+    width: 240px;
     margin-bottom: 40px;
     margin-left: 0px;
   }
 
   .hero-wrapper {
-    margin-bottom: 140px;
-    bottom: -40px;
+    margin-bottom: 100px;
+    bottom: 20px;
   }
 
   h1 {
@@ -524,7 +491,7 @@ h2 {
 
   .intro-text {
     font-size: 16px;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
     margin-right: -16px;
   }
 

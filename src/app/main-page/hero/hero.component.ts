@@ -8,15 +8,13 @@ import {
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
-
   constructor(private translate: TranslateService) {}
   changeLanguage(language: string) {
     this.translate.use(language);
   }
-
 }

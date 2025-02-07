@@ -11,12 +11,21 @@
     </div>
 
     <div class="profile">
-      <img class="profile-picture" [src]="references[currentIndex].img" alt="picture-of-person" />
+      <img
+        class="profile-picture"
+        [src]="references[currentIndex].img"
+        alt="picture-of-person"
+      />
     </div>
   </div>
 
   <div class="arrows">
     <img [src]="leftArrowSrc" (click)="previousImage()" alt="arrow-left" />
+    <div class="indicators">
+      <div class="dot" [class.active]="currentIndex === 0"></div>
+      <div class="dot" [class.active]="currentIndex === 1"></div>
+      <div class="dot" [class.active]="currentIndex === 2"></div>
+    </div>
     <img [src]="rightArrowSrc" (click)="nextImage()" alt="arrow-right" />
   </div>
 </section>

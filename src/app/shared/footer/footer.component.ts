@@ -8,7 +8,7 @@ import {
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

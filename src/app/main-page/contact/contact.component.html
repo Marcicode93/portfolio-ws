@@ -1,15 +1,15 @@
-<section data-aos='fade-left'>
+<section data-aos="fade-left">
   <div class="content">
     <div class="headline">
       <div class="line"></div>
-      <h1>{{'contact.contact' | translate}}</h1>
+      <h1>{{ "contact.contact" | translate }}</h1>
     </div>
 
     <div class="elements">
       <div class="left">
-        <span class="subtitle">{{'contact.tagline' | translate}}</span>
+        <span class="subtitle">{{ "contact.tagline" | translate }}</span>
         <p>
-          {{'contact.text' | translate}}
+          {{ "contact.text" | translate }}
         </p>
       </div>
       <div class="right">
@@ -76,7 +76,9 @@
             />
             }
 
-            <p [innerHTML]="'contact.privacy' | translate">{{'contact.privacy1' | translate}}</p>
+            <p [innerHTML]="'contact.privacy' | translate">
+              {{ "contact.privacy1" | translate }}
+            </p>
             @if (formSubmitted && !isChecked) {
             <p class="error-message" style="color: red">
               Please accept the privacy policy.
@@ -91,8 +93,8 @@
             Send message!
           </button>
           @if (messageSent) {
-            <span class="success-message">hat geklappt</span>
-        }
+          <span class="success-message">hat geklappt</span>
+          }
         </form>
       </div>
     </div>

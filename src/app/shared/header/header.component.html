@@ -1,7 +1,20 @@
 <nav [class.scrolled]="isScrolled">
   <h1 id="header-name">Marcel</h1>
 
-  <button class="burger-menu" (click)="toggleMenu()">☰</button>
+  <button class="burger-menu" (click)="toggleMenu()">
+    <img
+      src="../../../assets/img/01_hero/Property 1=burger.png"
+      alt="burger-menu"
+      class="menu-icon"
+      [class.hidden]="menuOpen"
+    />
+    <img
+      src="../../../assets/img/01_hero/Property 1=CLOSE FINAL.png"
+      alt="close-burger-menu"
+      class="menu-icon"
+      [class.hidden]="!menuOpen"
+    />
+  </button>
 
   <div class="nav-links" id="hero" [class.open]="menuOpen">
     <a href="#about-me" (click)="closeMenu()">{{
@@ -10,32 +23,28 @@
     <a href="#skill-section" (click)="closeMenu()">Skills</a>
     <a href="#p-section" (click)="closeMenu()">Portfolio</a>
 
+    <button
+      (click)="changeLanguage('de')"
+      class="flag-btn"
+      [class.active-flag]="currentLanguage === 'de'"
+    >
+      <img
+        src="../../../assets/img/01_hero/323332.png"
+        alt="germany-flag"
+        class="flag-img"
+      />
+    </button>
 
-      <button
-        (click)="changeLanguage('de')"
-        class="flag-btn"
-        [class.active-flag]="currentLanguage === 'de'"
-      >
-        <img
-          src="../../../assets/img/01_hero/323332.png"
-          alt="germany-flag"
-          class="flag-img"
-        />
-      </button>
-
-
- 
-      <button
-        (click)="changeLanguage('en')"
-        class="flag-btn"
-        [class.active-flag]="currentLanguage === 'en'"
-      >
-        <img
-          src="../../../assets/img/01_hero/United-kingdom_flag_icon_round.svg.png"
-          alt="uk-flag"
-          class="flag-img"
-        />
-      </button>
-
+    <button
+      (click)="changeLanguage('en')"
+      class="flag-btn"
+      [class.active-flag]="currentLanguage === 'en'"
+    >
+      <img
+        src="../../../assets/img/01_hero/United-kingdom_flag_icon_round.svg.png"
+        alt="uk-flag"
+        class="flag-img"
+      />
+    </button>
   </div>
 </nav>

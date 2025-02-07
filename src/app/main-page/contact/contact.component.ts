@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslateDirective, TranslatePipe],
+  imports: [FormsModule, TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -52,30 +52,22 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     this.formSubmitted = true;
-    if (
-      ngForm.submitted &&
-      ngForm.form.valid &&
-      this.isChecked
-    ) {
+    if (ngForm.submitted && ngForm.form.valid && this.isChecked) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
             this.formSubmitted = false;
-            this.messageSent = true; 
-            setTimeout(() => this.messageSent = false, 5000);
+            this.messageSent = true;
+            setTimeout(() => (this.messageSent = false), 5000);
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.log('Data sent: ', this.contactData),
         });
-    } else if (
-      ngForm.submitted &&
-      ngForm.form.valid &&
-      !this.isChecked
-    ) {
+    } else if (ngForm.submitted && ngForm.form.valid && !this.isChecked) {
       ngForm.resetForm();
       this.formSubmitted = false;
     }

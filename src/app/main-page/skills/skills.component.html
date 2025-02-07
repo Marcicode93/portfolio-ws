@@ -1,4 +1,4 @@
-<section id="skills" data-aos='fade-left'>
+<section id="skills" data-aos="fade-left">
   <div class="content" data-aos="”fade-right”">
     <div class="left">
       <div class="element">
@@ -62,7 +62,11 @@
         (mouseover)="changeImage()"
         (mouseout)="resetImage()"
       >
-        <img [src]="currentImage" id="continually-img" alt="" />
+        @if (showHoverImage) {
+
+        <img [src]="hoverImage" alt="" class="hover-img" />
+        }
+        <img [src]="defaultImage" id="continually-img" alt="" />
         <p>Learning</p>
       </div>
     </div>
@@ -70,14 +74,12 @@
       <div class="order">
         <h1>{{ "my-skills.headline" | translate }}</h1>
 
-        <p>
-        
-        </p>
+        <p></p>
       </div>
       <br />
 
       <div class="last">
-        <span class="looking" >{{ "my-skills.sub-text2" | translate }}</span>
+        <span class="looking">{{ "my-skills.sub-text2" | translate }}</span>
         <span class="another">{{ "my-skills.sub-text3" | translate }}</span>
         <span class="looking">?</span>
         <p>

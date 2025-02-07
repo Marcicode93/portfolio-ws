@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [TranslateDirective, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })
@@ -21,18 +21,19 @@ export class SkillsComponent implements OnInit {
   }
 
   defaultImage = 'assets/img/03_skills/Capa_1.png';
-  hoverImage = 'assets/img/03_skills/Property 1=Group 19.png';
-  currentImage = this.defaultImage;
+  hoverImage = 'assets/img/03_skills/react_vue.png';
+  showHoverImage = false;
 
   changeImage() {
-    this.currentImage = this.hoverImage;
+    this.showHoverImage = true;
   }
 
   resetImage() {
-    this.currentImage = this.defaultImage;
+    this.showHoverImage = false;
   }
 
   constructor(private translate: TranslateService) {}
+
   changeLanguage(language: string) {
     this.translate.use(language);
   }

@@ -10,7 +10,7 @@ footer {
   a {
     text-decoration: none;
 
-    &:hover{
+    &:hover {
       color: rgb(31, 243, 194);
     }
   }
@@ -42,9 +42,10 @@ h1 {
     padding: 40px;
     border-top: 4px solid rgb(25, 203, 162);
   }
-  
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     text-align: center;
     width: 100%;
   }
@@ -67,7 +68,6 @@ h1 {
     margin-top: 24px;
     margin-left: 20px;
   }
-  
 
   .socials img {
     display: block;
