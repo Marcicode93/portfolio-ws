@@ -4,10 +4,8 @@
       <h1 class="footer-name">Marcel</h1>
     </a>
     <div class="links"></div>
-    <a href="data-privacy" routerLinkActive="active-link">{{
-      "footer.legal-notice" | translate
-    }}</a>
-    <a id="imprint" href="imprint">{{ "footer.imprint" | translate }}</a>
+    <a routerLink="data-privacy">{{ "footer.legal-notice" | translate }}</a>
+    <a id="imprint" routerLink="imprint">{{ "footer.imprint" | translate }}</a>
   </div>
   <p>&copy; Copyright Marcel Steffen 2025</p>
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import {
   TranslateService,
   TranslatePipe,
@@ -8,7 +9,7 @@ import {
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
