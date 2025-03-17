@@ -20,12 +20,12 @@
             name="name"
             #nameField="ngModel"
             type="text"
-            placeholder="Your name"
+            [placeholder]="'contact.name_placeholder' | translate"
             class="input-field"
             required
           />
           <div class="error">
-            @if (nameField.invalid && nameField.touched) { Name is required. }
+            @if (nameField.invalid && nameField.touched) { {{"'contact.name_required'" | translate}} }
           </div>
           <label class="label">Email:</label>
           <input
@@ -33,13 +33,14 @@
             name="email"
             type="email"
             #emailField="ngModel"
-            placeholder="Your email"
+            [placeholder]="'contact.email_placeholder' | translate"
             class="input-field"
             required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           />
           <div class="error">
-            @if (emailField.invalid && emailField.touched) { Email is required.
+            @if (emailField.invalid && emailField.touched) {
+              {{ "contact.email_required" | translate }}
             }
           </div>
           <label class="label">Message:</label>
@@ -49,15 +50,14 @@
             class="input-field ip3"
             name="message"
             #messageField="ngModel"
-            placeholder="Your message"
+            [placeholder]="'contact.msg_placeholder' | translate"
             rows="30"
             cols="50"
             required
           >
           </textarea>
           <div class="error">
-            @if (messageField.invalid && messageField.touched) { Message is
-            required. }
+            @if (messageField.invalid && messageField.touched) { {{"'contact.msg_required'" | translate}} }
           </div>
           <div class="checkbox">
             @if (isChecked) {
@@ -89,8 +89,8 @@
             type="submit"
             [disabled]="contactForm.invalid || !isChecked"
             class="btn-primary"
+            [innerHTML]="'contact.submit' | translate"
           >
-            Send message!
           </button>
           @if (messageSent) {
           <span class="success-message">hat geklappt</span>

@@ -4,11 +4,12 @@ import {
   TranslatePipe,
   TranslateDirective,
 } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe, RouterModule],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })

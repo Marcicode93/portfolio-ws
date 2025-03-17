@@ -2,10 +2,10 @@
   <div class="reference-content">
     <div class="element-wrapper">
       <div class="element">
-        <p>{{ references[currentIndex].text }}</p>
+        <p>{{ references[currentIndex].textKey | translate }}</p>
         <div class="line_name">
           <div class="line"></div>
-          <p>{{ references[currentIndex].name }}</p>
+          <p>{{ references[currentIndex].nameKey | translate }}</p>
         </div>
       </div>
     </div>
@@ -25,6 +25,8 @@
       <div class="dot" [class.active]="currentIndex === 0"></div>
       <div class="dot" [class.active]="currentIndex === 1"></div>
       <div class="dot" [class.active]="currentIndex === 2"></div>
+      <div class="dot" [class.active]="currentIndex === 3"></div>
+      <div class="dot" [class.active]="currentIndex === 4"></div>
     </div>
     <img [src]="rightArrowSrc" (click)="nextImage()" alt="arrow-right" />
   </div>

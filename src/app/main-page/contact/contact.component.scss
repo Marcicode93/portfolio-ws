@@ -54,6 +54,9 @@ form {
   margin-bottom: 24px;
   color: white;
   padding-left: 12px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 16px;
 
   &.ng-touched.ng-invalid {
     border-color: rgba(255, 0, 0, 0.5);
@@ -66,10 +69,10 @@ form {
 
 .input-field::placeholder {
   position: absolute;
-  top: 12px;
+  top: 22px;
   left: 10px;
   color: #888;
-  font-size: 14px;
+  font-size: 16px;
   transform: translateY(-10px);
 }
 

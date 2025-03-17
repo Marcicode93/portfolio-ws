@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })

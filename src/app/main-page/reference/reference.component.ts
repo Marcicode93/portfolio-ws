@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 @Component({
   selector: 'app-reference',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './reference.component.html',
   styleUrl: './reference.component.scss',
 })
@@ -22,18 +22,28 @@ export class ReferenceComponent implements OnInit {
   references = [
     {
       img: '../../../assets/img/02_about/marcel ellipse fin.png',
-      text: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla',
-      name: 'Marcel',
+      textKey: 'reference.text1',
+      nameKey: 'reference.name1',
     },
     {
       img: '../../../assets/img/02_about/marcel ellipse fin.png',
-      text: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla2222',
-      name: 'Marcel2',
+      textKey: 'reference.text2',
+      nameKey: 'reference.name2',
     },
     {
       img: '../../../assets/img/02_about/marcel ellipse fin.png',
-      text: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla3333',
-      name: 'Marcel3',
+      textKey: 'reference.text3',
+      nameKey: 'reference.name3',
+    },
+    {
+      img: '../../../assets/img/02_about/marcel ellipse fin.png',
+      textKey: 'reference.text4',
+      nameKey: 'reference.name4',
+    },
+    {
+      img: '../../../assets/img/02_about/marcel ellipse fin.png',
+      textKey: 'reference.text5',
+      nameKey: 'reference.name5',
     },
   ];
 
@@ -55,5 +65,4 @@ export class ReferenceComponent implements OnInit {
   changeLanguage(language: string) {
     this.translate.use(language);
   }
-
 }
