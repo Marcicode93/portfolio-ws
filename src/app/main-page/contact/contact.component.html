@@ -25,7 +25,8 @@
             required
           />
           <div class="error">
-            @if (nameField.invalid && nameField.touched) { {{"'contact.name_required'" | translate}} }
+            @if (nameField.invalid && nameField.touched) {
+            {{'contact.name_required' | translate}} }
           </div>
           <label class="label">Email:</label>
           <input
@@ -40,7 +41,7 @@
           />
           <div class="error">
             @if (emailField.invalid && emailField.touched) {
-              {{ "contact.email_required" | translate }}
+            {{ "contact.email_required" | translate }}
             }
           </div>
           <label class="label">Message:</label>
@@ -57,7 +58,8 @@
           >
           </textarea>
           <div class="error">
-            @if (messageField.invalid && messageField.touched) { {{"'contact.msg_required'" | translate}} }
+            @if (messageField.invalid && messageField.touched) {
+            {{ "contact.message_required" | translate }} }
           </div>
           <div class="checkbox">
             @if (isChecked) {
@@ -90,10 +92,11 @@
             [disabled]="contactForm.invalid || !isChecked"
             class="btn-primary"
             [innerHTML]="'contact.submit' | translate"
-          >
-          </button>
+          ></button>
           @if (messageSent) {
-          <span class="success-message">hat geklappt</span>
+          <span class="success-message">{{
+            "contact.success" | translate
+          }}</span>
           }
         </form>
       </div>
@@ -106,6 +109,5 @@
         />
       </a>
     </div>
-    <!-- <img class="shadow" src="../../../assets/img/01_hero/53. Blue shadow 2.png" alt="image-of-shadow"> -->
   </div>
 </section>

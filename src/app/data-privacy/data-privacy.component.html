@@ -1,4 +1,6 @@
-<div class="content">
+<app-header></app-header>
+
+<div class="content" id="top">
   <a routerLink="/"
     ><img
       src="../../assets/img/07_footer/icons8-back-arrow-50.png"
@@ -6,5 +8,5 @@
       class="back-arrow"
   /></a>
 
-  <div [innerHTML]="'privacy.text' | translate"></div>
+  <div [innerHTML]="'privacy.text' | translate" class="privacy-text"></div>
 </div>

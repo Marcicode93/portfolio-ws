@@ -16,6 +16,10 @@
   justify-content: center;
   gap: 60px;
 
+  .element {
+    height: 300px;
+  }
+
   @media (max-width: 1200px) {
     flex-direction: column;
     position: relative;
@@ -58,13 +62,16 @@
       border: 2px solid rgb(25, 203, 162);
       border-radius: 20px;
     }
+
+    .element {
+      height: 480px;
+    }
   }
 
   @media (max-width: 400px) {
     .element-wrapper {
       max-width: 300px;
       width: 260px !important;
-      height: 300px;
       padding: 10px 20px;
       border: 2px solid rgb(25, 203, 162);
       border-radius: 20px;
@@ -125,7 +132,7 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: -40px;
+  margin-top: 10px;
   @media (max-width: 1200px) {
     margin-top: 12px;
   }

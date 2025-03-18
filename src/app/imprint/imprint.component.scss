@@ -16,3 +16,16 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .back-arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    margin-top: 12px;
+
+    &:hover {
+      transform: scale(1.2) translateY(-5px);
+      @include glow();
+    }
+  }

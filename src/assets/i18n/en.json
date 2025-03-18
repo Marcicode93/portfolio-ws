@@ -6,10 +6,10 @@
 
   "about-me": {
     "headline": "About me",
-    "sub-text": "I’m a passionate frontend developer specializing in Angular. My goal is to build modern, high-performance, and user-friendly web applications. I love solving complex challenges, and continuously expanding my knowledge. Let’s build amazing applications together!",
+    "sub-text": "I’m Marcel, a frontend developer with a focus on Angular. I bring over six years of experience in Scrum projects, including roles as a product manager and product owner in a DAX-listed company. Through this, I’ve not only built technical expertise but also learned how to motivate teams and drive projects forward in a structured way. I enjoy working with Angular, TypeScript, and responsive design the most, and I’m well-versed in software-related environments. My goal: to combine technology and practice in a way that delivers really great solutions!",
     "table-text1": "I'm from Donaueschingen and open to relocating for an exciting job opportunity. At the same time, I highly value remote work and the flexibility it offers.",
     "table-text2": "I'm open-minded and flexible, able to adapt to various situations with ease. I love learning new things and continuously expanding my skills to stay ahead",
-    "table-text3": "bblasdhlsdj englisch"
+    "table-text3": "I bring an analytical mindset and am creative – whether through music production, filming videos, or video editing – and I also infuse this creativity into my work as a developer."
   },
 
   "my-skills": {
@@ -29,16 +29,16 @@
   },
 
   "reference": {
-    "text1": "Marcel is someone you can rely on 100%. His analytical and pragmatic approach to problems makes him a great team member, always with a clear plan. At the same time, his sense of humor creates a pleasant and productive working atmosphere. It's immediately apparent that he brings experience as a project manager – he keeps an overview, makes sound decisions, and supports his team with valuable input. An asset to any project! (Sascha Töpfer)",
-    "text2": "Marcel was a valuable part of our team on the Join group project. He contributed significantly to our success, not only by contributing his technical skills but also by enriching our work with his positive feedback. Communication with him was always pleasant and straightforward, and he integrated perfectly into the group. It was a pleasure working with him. (Osahon Schmolze - Join)",
-    "text3": "Marcel brought a positive dynamic to the team with his humorous nature, while also impressing with his good organization and reliability. His clean and well-structured code made collaboration particularly efficient and pleasant. (Hendrik Bischoping - DA Bubble)",
-    "text4": "Marcel impressed with his commitment and innovative approaches. The group work benefited greatly from his positive attitude. (Sinan Demir - Join)",
-    "text5": "Marcel quickly finds solutions to any problems that arise. He is committed, straightforward and has no difficulty adapting to the team. (Michael Maier - Kochwelt)",
-    "name1": "Sascha Töpfer",
-    "name2": "Osahon Schmolze",
-    "name3": "Hendrik Bischoping",
-    "name4": "Sinan Demir",
-    "name5": "Michael Maier"
+    "text1": "Marcel is someone you can rely on 100%. His analytical and pragmatic approach to problems makes him a great team member, always with a clear plan. At the same time, his sense of humor creates a pleasant and productive working atmosphere. It's immediately apparent that he brings experience as a project manager – he keeps an overview, makes sound decisions, and supports his team with valuable input. An asset to any project!",
+    "text2": "Marcel was a valuable part of our team on the Join group project. He contributed significantly to our success, not only by contributing his technical skills but also by enriching our work with his positive feedback. Communication with him was always pleasant and straightforward, and he integrated perfectly into the group. It was a pleasure working with him.",
+    "text3": "Marcel brought a positive dynamic to the team with his humorous nature, while also impressing with his good organization and reliability. His clean and well-structured code made collaboration particularly efficient and pleasant.",
+    "text4": "Marcel impressed with his commitment and innovative approaches. The group work benefited greatly from his positive attitude.",
+    "text5": "Marcel quickly finds solutions to any problems that arise. He is committed, straightforward and has no difficulty adapting to the team.",
+    "name1": "Sascha Töpfer - DA Bubble",
+    "name2": "Osahon Schmolze - Join",
+    "name3": "Hendrik Bischoping - DA Bubble",
+    "name4": "Sinan Demir - Join",
+    "name5": "Michael Maier - Kochwelt"
   },
 
   "contact": {
@@ -50,9 +50,10 @@
     "email_placeholder": "Your e-mail",
     "email_required": "Please provide a valid email address.",
     "msg_placeholder": "Your message",
-    "msg_required": "Message is required.",
+    "message_required": "Message is required.",
     "privacy": "I've read the <a href=\"data-privacy\" class='checkbox'>privacy policy</a> and agree to the processing of my data as outlined.",
-    "submit": "Send message!"
+    "submit": "Send message!",
+    "success": "Message sent. Thank you!"
   },
 
   "footer": {

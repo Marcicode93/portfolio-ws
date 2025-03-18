@@ -15,7 +15,9 @@ import {
 })
 export class FooterComponent {
   constructor(private translate: TranslateService) {}
+  
   changeLanguage(language: string) {
     this.translate.use(language);
   }
+
 }

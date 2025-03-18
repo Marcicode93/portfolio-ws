@@ -58,7 +58,6 @@
   color: rgba(28, 230, 182, 1);
 }
 
-body,
 html {
   margin: 0;
   font-family: "Poppins";
@@ -68,6 +67,13 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   @include bg-colour();
+}
+
+body {
+  margin: 0;
+  height: auto;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 // * {
@@ -85,6 +91,7 @@ a {
   color: white;
   &:hover {
     cursor: pointer;
+    color: rgba(28, 230, 182, 1);
   }
 }
 
@@ -111,7 +118,7 @@ h3 {
   padding: 0;
 }
 
-.back-arrow{
+.back-arrow {
   width: 40px;
   height: 40px;
 }
@@ -190,5 +197,37 @@ a:hover {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  a {
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 }

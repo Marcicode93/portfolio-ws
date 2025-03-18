@@ -6,10 +6,10 @@
 
   "about-me": {
     "headline": "Über Mich",
-    "sub-text": "Hi, ich bin Marcel, Frontend-Entwickler mit Fokus auf Angular. Ich bringe über sechs Jahre Erfahrung in Scrum-Projekten mit, unter anderem als Produktmanager und Product Owner in einem DAX-Konzern. Dabei habe ich nicht nur technisches Wissen aufgebaut, sondern auch gelernt, Teams zu motivieren und Projekte strukturiert voranzutreiben. Ich arbeite am liebsten mit Angular, TypeScript und responsivem Design und kenne mich daher in software-nahen Umgebungen aus. Mein Ziel: Technik und Praxis so zusammenbringen, dass richtig gute Lösungen rauskommen!",
+    "sub-text": "Ich bin Marcel, Frontend-Entwickler mit Fokus auf Angular. Ich bringe über sechs Jahre Erfahrung in Scrum-Projekten mit, unter anderem als Produktmanager und Product Owner in einem DAX-Konzern. Dabei habe ich nicht nur technisches Wissen aufgebaut, sondern auch gelernt, Teams zu motivieren und Projekte strukturiert voranzutreiben. Ich arbeite am liebsten mit Angular, TypeScript und responsivem Design und kenne mich daher in software-nahen Umgebungen aus. Mein Ziel: Technik und Praxis so zusammenbringen, dass richtig gute Lösungen rauskommen!",
     "table-text1": "Ich komme aus Donaueschingen und bin offen für einen Umzug, wenn sich eine spannende Jobmöglichkeit bietet. Gleichzeitig schätze ich Remote-Arbeit und die Flexibilität, die sie mit sich bringt.",
-    "table-text2": "Komplexe Aufgabenstellungen zu lösen und Herausforderungen zu überkommen ist genau mein Ding.",
-    "table-text3": "Ich mag Puzzle."
+    "table-text2": "Komplexe Aufgaben zu lösen und Herausforderungen zu meistern ist genau mein Ding. Als Entwickler mag ich es, ständig dazuzulernen – neue Technologien, Frameworks und Programmiersprachen.",
+    "table-text3": "Ich bringe eine analytische Denkweise mit und bin ich kreativ – ob durch Musikproduktion, das Drehen von Videos oder Videoschnitt – und lasse diese Kreativität auch in meine Arbeit als Entwickler einfließen."
   },
 
   "my-skills": {
@@ -29,16 +29,16 @@
   },
 
   "reference": {
-    "text1": "Marcel ist jemand, auf den man sich zu 100 % verlassen kann. Seine analytische und pragmatische Herangehensweise an Probleme macht ihn zu einem großartigen Teammitglied, das immer einen klaren Plan hat. Gleichzeitig sorgt sein Humor für eine angenehme und produktive Arbeitsatmosphäre. Man merkt sofort, dass er Erfahrung als Projektmanager mitbringt – er behält den Überblick, trifft fundierte Entscheidungen und unterstützt sein Team mit wertvollen Impulsen. Eine Bereicherung für jedes Projekt! (Sascha Töpfer)",
-    "text2": "Marcel war ein wertvoller Teil unseres Teams beim Join-Gruppenprojekt. Er hat einen großen Teil zum Erfolg beigetragen, indem er nicht nur seine technischen Fähigkeiten eingebracht hat, sondern auch durch sein gutes Feedback unsere Arbeit bereichert hat. Die Kommunikation mit ihm war stets angenehm und unkompliziert, und er hat sich super in die Gruppe eingefügt. Es war eine Freude, mit ihm zusammenzuarbeiten. (Osahon Schmolze - Join)",
-    "text3": "Marcel brachte mit seiner humorvollen Art eine positive Dynamik ins Team, während er zugleich durch seine gute Organisation und Zuverlässigkeit überzeugte. Sein sauberer und gut strukturierter Code machte die Zusammenarbeit besonders effizient und angenehm. (Hendrik Bischoping - DA Bubble)",
-    "text4": "Marcel überzeugte durch sein Engagement und seine innovativen Ansätze. Die Gruppenarbeit profitierte sehr von seiner positiven Art. (Sinan Demir - Join)",
-    "text5": "Marcel findet bei auftretenden Problemen schnell Lösungen. Er ist engagiert, unkompliziert und fügt sich problemlos ins Team ein. (Michael Maier - Kochwelt)",
-    "name1": "Sascha Töpfer",
-    "name2": "Osahon Schmolze",
-    "name3": "Hendrik Bischoping",
-    "name4": "Sinan Demir",
-    "name5": "Michael Maier"
+    "text1": "Marcel ist jemand, auf den man sich zu 100 % verlassen kann. Seine analytische und pragmatische Herangehensweise an Probleme macht ihn zu einem großartigen Teammitglied, das immer einen klaren Plan hat. Gleichzeitig sorgt sein Humor für eine angenehme und produktive Arbeitsatmosphäre. Man merkt sofort, dass er Erfahrung als Projektmanager mitbringt – er behält den Überblick, trifft fundierte Entscheidungen und unterstützt sein Team mit wertvollen Impulsen. Eine Bereicherung für jedes Projekt!",
+    "text2": "Marcel war ein wertvoller Teil unseres Teams beim Join-Gruppenprojekt. Er hat einen großen Teil zum Erfolg beigetragen, indem er nicht nur seine technischen Fähigkeiten eingebracht hat, sondern auch durch sein gutes Feedback unsere Arbeit bereichert hat. Die Kommunikation mit ihm war stets angenehm und unkompliziert, und er hat sich super in die Gruppe eingefügt. Es war eine Freude, mit ihm zusammenzuarbeiten.",
+    "text3": "Marcel brachte mit seiner humorvollen Art eine positive Dynamik ins Team, während er zugleich durch seine gute Organisation und Zuverlässigkeit überzeugte. Sein sauberer und gut strukturierter Code machte die Zusammenarbeit besonders effizient und angenehm.",
+    "text4": "Marcel überzeugte durch sein Engagement und seine innovativen Ansätze. Die Gruppenarbeit profitierte sehr von seiner positiven Art.",
+    "text5": "Marcel findet bei auftretenden Problemen schnell Lösungen. Er ist engagiert, unkompliziert und fügt sich problemlos ins Team ein.",
+    "name1": "Sascha Töpfer - DA Bubble",
+    "name2": "Osahon Schmolze - Join",
+    "name3": "Hendrik Bischoping - DA Bubble",
+    "name4": "Sinan Demir - Join",
+    "name5": "Michael Maier - Kochwelt"
   },
 
   "contact": {
@@ -50,9 +50,10 @@
     "email_placeholder":"Email",
     "email_required":"Bitte eine gültige Email angeben.",
     "msg_placeholder":"Nachricht",
-    "msg_required":"Bitte eine Nachricht eingeben.",
+    "message_required":"Bitte eine Nachricht eingeben.",
     "privacy": "Ich habe die <a href=\"data-privacy\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-    "submit": "Absenden!"
+    "submit": "Absenden!",
+    "success": "Nachricht gesendet. Vielen Dank!"
   },
 
   "footer": {

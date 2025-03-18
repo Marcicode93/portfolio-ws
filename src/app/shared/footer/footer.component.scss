@@ -75,3 +75,27 @@ h1 {
     height: 20px;
   }
 }
+
+@media (max-width: 1000px) and (max-height: 1440px) {
+  footer {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 940px) and (max-height: 940px) {
+  footer {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    margin-bottom: 120px;
+  }
+}

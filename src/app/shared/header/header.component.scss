@@ -55,7 +55,7 @@ button {
   border: none;
   margin-right: 12px;
   background-color: rgba(20, 29, 47, 1);
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
@@ -152,6 +152,7 @@ body {
 
     .nav-links.open {
       display: flex;
+      align-items: center;
     }
   }
 
@@ -188,7 +189,6 @@ body {
     left: -40px;
     top: 60px;
     text-align: center;
-    width: 100%;
     height: 100vh;
   }
 }
@@ -206,9 +206,6 @@ body {
     width: 100%;
     height: 100vh;
   }
-}
-
-@media (max-width: 600px) {
 }
 
 @media (max-width: 500px) {

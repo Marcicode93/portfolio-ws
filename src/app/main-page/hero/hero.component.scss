@@ -1,13 +1,14 @@
 @import "../../../styles.scss";
 
 .hero-content {
-  height: 90vh;
+  max-height: 90vh;
   margin-top: 200px;
   background-image: url("../../../assets/img/01_hero/28. Hero Background.png");
   background-size: cover;
   @include contentmax();
   min-height: 600px;
   max-height: 700px;
+  overflow-y: auto;
 }
 
 .hero-wrapper {
@@ -333,6 +334,7 @@ h2 {
     flex-direction: column;
     position: relative;
     bottom: 60px;
+    margin-top: -10px;
   }
 
   h1 {
@@ -361,7 +363,7 @@ h2 {
   }
 
   .hero-content {
-    height: 100vh;
+    height: 90vh;
     margin-top: 0px;
     max-height: 600px;
     min-height: 700px;
@@ -428,6 +430,7 @@ h2 {
   .hero-wrapper {
     margin-bottom: 100px;
     bottom: 20px;
+    margin-top: -30px;
   }
 
   h1 {
@@ -438,10 +441,6 @@ h2 {
   h2 {
     font-size: 24px;
     letter-spacing: 2px;
-  }
-
-  h3 {
-    font-size: 16px;
   }
 
   .intro-text {
@@ -473,6 +472,7 @@ h2 {
   .hero-wrapper {
     margin-bottom: 100px;
     bottom: 20px;
+    margin-top: -30px;
   }
 
   h1 {
