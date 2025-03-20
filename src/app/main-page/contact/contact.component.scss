@@ -73,6 +73,7 @@ form {
   left: 10px;
   color: #888;
   font-size: 16px;
+  font-family: "Poppins";
   transform: translateY(-10px);
 }
 
@@ -171,11 +172,11 @@ button:disabled {
 }
 
 .shadow {
-  width: 30%; /* Skaliert das Bild auf 50% der Breite des Containers */
-  height: auto; /* Erhält das Seitenverhältnis des Bildes */
-  position: absolute; /* Falls du das Bild positionieren möchtest */
-  bottom: 0; /* Positioniert das Bild am unteren Rand des Containers */
-  left: -10%; /* Oder andere Positionen je nach Bedarf */
+  width: 30%; 
+  height: auto;
+  position: absolute; 
+  bottom: 0; 
+  left: -10%;
   top: 350%;
 }
 

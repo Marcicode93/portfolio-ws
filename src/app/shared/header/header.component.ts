@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import {
   TranslateService,
   TranslatePipe,
@@ -8,7 +9,7 @@ import {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

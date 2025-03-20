@@ -20,6 +20,7 @@
 
 .element {
   font-weight: 700;
+  width: 100px;
   text-align: center;
 }
 
@@ -195,6 +196,10 @@ img:hover {
     text-align: end;
   }
 
+  .element {
+    width: 140px;
+  }
+
   .btn-primary {
     padding: 10px 40px 10px 40px;
     border-radius: 8px;
@@ -268,7 +273,13 @@ img:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 860px) {
+  .element {
+    width: 120px;
+  }
+}
+
+@media (max-width: 760px) {
   #skills .element p {
     font-size: 16px;
   }
@@ -300,9 +311,27 @@ img:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   .left {
     gap: 16px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .element {
+    width: 80px;
+  }
+}
+
+@media (max-width: 570px) {
+  .left {
+    gap: 16px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .element {
+    width: 90px;
   }
 
   .looking,
@@ -317,5 +346,42 @@ img:hover {
 
   span {
     padding-left: 6px;
+  }
+}
+
+@media (max-width: 510px) {
+  .element {
+    width: 80px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .element {
+    width: 80px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .element {
+    width: 80px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .element {
+    width: 60px;
+    text-align: center;
+  }
+
+  .element img {
+    max-width: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #skills .element p {
+    font-size: 13px;
   }
 }

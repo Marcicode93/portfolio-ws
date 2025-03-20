@@ -1,14 +1,14 @@
 @import "../../../styles.scss";
 
 .hero-content {
-  max-height: 90vh;
+  height: 100vh;
   margin-top: 200px;
   background-image: url("../../../assets/img/01_hero/28. Hero Background.png");
   background-size: cover;
   @include contentmax();
   min-height: 600px;
-  max-height: 700px;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .hero-wrapper {
@@ -20,16 +20,15 @@
 }
 
 .hero-picture {
-  width: 500px;
+  width: 460px;
   margin-left: 60px;
   position: relative;
-  bottom: 180px;
+  bottom: 200px;
 }
 
 .hero-name {
   display: flex;
   justify-content: center;
-  margin-right: 400px;
   position: relative;
   bottom: 180px;
 }
@@ -57,6 +56,7 @@
   padding-right: 0px;
   margin-right: -40px;
   font-size: 56px;
+  margin-top: 30px;
 }
 
 h1 {
@@ -101,19 +101,29 @@ h2 {
   }
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 8320px) {
   .hero-name {
     margin-right: 300px;
+  }
+
+  .hero-wrapper {
+    margin-top: 90px;
   }
 }
 
 @media (max-width: 1860px) {
-  .hero-picture {
-    bottom: 200px;
+  .hero-wrapper {
+    bottom: 160px;
+    margin-top: 100px;
   }
   .hero-name {
     margin-right: 300px;
     bottom: 200px;
+  }
+
+  .hero-picture {
+    width: 420px;
+    margin-left: 60px;
   }
 }
 
@@ -143,15 +153,11 @@ h2 {
   }
 
   .intro-text {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 }
 
 @media (max-width: 1620px) {
-  .hero-content {
-    background-size: 1580px;
-  }
-
   .hero-picture {
     width: 460px;
     margin-left: 60px;
@@ -165,7 +171,17 @@ h2 {
 @media (max-width: 1590px) {
   .hero-picture {
     width: 380px;
-    bottom: 100px;
+    bottom: 75px;
+  }
+
+  .hero-content {
+    background-size: 1580px;
+    background-position: 0px 30px;
+  }
+
+  .hero-wrapper {
+    bottom: 160px;
+    margin-top: 0px;
   }
 
   .hero-name {
@@ -187,10 +203,10 @@ h2 {
   }
 
   .intro-text {
-    font-size: 24px;
-    margin-bottom: 68px;
+    font-size: 28px;
+    margin-bottom: 72px;
     padding-right: 0px;
-    margin-right: -36px;
+    margin-right: -28px;
   }
 }
 
@@ -199,14 +215,19 @@ h2 {
     margin-top: 0px;
   }
 
+  .hero-content {
+    background-size: 1580px;
+    background-position: 0px 60px;
+  }
+
   .hero-name {
     margin-right: 140px;
     bottom: -80px;
   }
 
   .hero-picture {
-    width: 260px;
-    bottom: -80px;
+    width: 360px;
+    bottom: 0px;
   }
 
   .hero-wrapper {
@@ -229,6 +250,7 @@ h2 {
   .intro-text {
     font-size: 24px;
     margin-bottom: 90px;
+    margin-top: 25px;
     margin-right: 2px;
   }
 
@@ -238,7 +260,7 @@ h2 {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1120px) {
   .hero-name {
     margin-right: 20px;
   }
@@ -259,12 +281,43 @@ h2 {
 
   .intro-text {
     font-size: 18px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    margin-top: 15px;
   }
 }
+
+@media (max-width: 1120px) {
+  .hero-name {
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    margin-bottom: 80px;
+    margin-right: -6px;
+  }
+}
+
 @media (max-width: 960px) {
+  .hero-content {
+    margin-top: 100px;
+  }
   .hero-picture {
-    width: 280px;
+    width: 320px;
     bottom: -50px;
   }
 
@@ -272,6 +325,7 @@ h2 {
     padding: 10px 40px 10px 40px;
     border-radius: 8px;
     border: none;
+    margin-top: 20px;
 
     &:hover {
       cursor: pointer;
@@ -280,6 +334,7 @@ h2 {
 
   .hero-name {
     margin-right: 0px;
+    margin-top: 80px;
   }
 
   h1 {
@@ -298,7 +353,7 @@ h2 {
 
   .intro-text {
     font-size: 18px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     margin-right: -2px;
   }
 }
@@ -310,9 +365,14 @@ h2 {
     text-align: center;
   }
 
+  .btn-primary {
+    margin-top: 0px;
+  }
+
   .hero-content {
     background-size: 1580px;
-    min-height: 800px;
+    height: 100vh;
+    min-height: 100vh;
     margin-top: 0px;
     background-size: 1400px;
   }
@@ -323,17 +383,17 @@ h2 {
   }
 
   .hero-picture {
-    width: 260px;
-    margin-bottom: 40px;
+    width: 290px;
+    margin-bottom: 20px;
     margin-left: 0px;
-    bottom: -80px;
+    bottom: -90px;
   }
 
   .hero-wrapper {
     margin-top: 80px;
     flex-direction: column;
     position: relative;
-    bottom: 60px;
+    bottom: 40px;
     margin-top: -10px;
   }
 
@@ -352,7 +412,7 @@ h2 {
 
   .intro-text {
     font-size: 28px;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
   }
 }
 
@@ -363,21 +423,22 @@ h2 {
   }
 
   .hero-content {
-    height: 90vh;
     margin-top: 0px;
     max-height: 600px;
-    min-height: 700px;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   .hero-picture {
-    width: 240px;
-    margin-bottom: 40px;
+    width: 270px;
+    margin-bottom: 20px;
     margin-left: 0px;
   }
 
   .hero-wrapper {
     margin-bottom: 80px;
-    bottom: 20px;
+    bottom: 10px;
   }
 
   .email {
@@ -390,7 +451,7 @@ h2 {
 
   h2 {
     font-size: 24px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
   }
 
   h3 {
@@ -417,20 +478,24 @@ h2 {
     width: 400px;
   }
 
+  .socials {
+    margin-top: 140px;
+  }
+
   .hero-content {
-    margin-top: 0px;
+    margin-top: 60px;
+    height: 100vh;
   }
 
   .hero-picture {
-    width: 240px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-left: 0px;
   }
 
   .hero-wrapper {
     margin-bottom: 100px;
-    bottom: 20px;
-    margin-top: -30px;
+    bottom: 0px;
+    margin-top: -20px;
   }
 
   h1 {
@@ -460,18 +525,90 @@ h2 {
 @media (max-width: 380px) {
   .hero-name {
     margin-right: 0px;
+    margin-top: 20px;
     width: 280px;
   }
 
   .hero-picture {
     width: 240px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-left: 0px;
   }
 
+  .hero-content {
+    margin-top: 0px;
+    height: 100vh;
+    background-position: 0px 0px;
+  }
+
+  .hero-name {
+    margin-top: 10px;
+  }
+
+  .btn-primary {
+    margin-top: 0px;
+  }
   .hero-wrapper {
     margin-bottom: 100px;
-    bottom: 20px;
+    bottom: 10px;
+    margin-top: -20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    margin-bottom: 80px;
+    margin-right: -16px;
+  }
+
+  .line {
+    width: 90px !important;
+    border: 2px solid rgba(75, 71, 255, 1);
+    margin-right: 24px;
+    margin-left: -23px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-name {
+    margin-right: 0px;
+    width: 280px;
+  }
+
+  .hero-picture {
+    width: 240px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+    height: 100vh;
+  }
+
+  .hero-name {
+    margin-top: 10px;
+  }
+
+  .btn-primary {
+    margin-top: 0px;
+  }
+  .hero-wrapper {
+    margin-bottom: 100px;
+    bottom: 10px;
     margin-top: -30px;
   }
 

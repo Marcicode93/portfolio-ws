@@ -74,9 +74,10 @@ h1 {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .profile-picture {
-    width: 300px;
+    width: 260px;
+    display: none;
   }
 
   .left {
@@ -109,7 +110,7 @@ h1 {
 
 @media (max-width: 900px) {
   .profile-picture {
-    width: 250px;
+    width: 200px;
   }
 
   .left {

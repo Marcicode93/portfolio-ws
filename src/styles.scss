@@ -33,8 +33,8 @@
 }
 
 @mixin pad() {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 @mixin glow {
@@ -75,10 +75,6 @@ body {
   overflow-y: visible;
   overflow-x: hidden;
 }
-
-// * {
-//   outline: 1px solid red;
-// }
 
 @mixin contentmax() {
   max-width: 1920px;

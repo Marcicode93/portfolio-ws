@@ -5,11 +5,12 @@ import {
   TranslateDirective,
 } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from "../shared/header/header.component";
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [TranslatePipe, RouterModule],
+  imports: [TranslatePipe, RouterModule, HeaderComponent],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
