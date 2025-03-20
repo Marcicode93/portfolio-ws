@@ -23,5 +23,4 @@ export class PortfolioComponent implements OnInit {
   changeLanguage(language: string) {
     this.translate.use(language);
   }
-
 }

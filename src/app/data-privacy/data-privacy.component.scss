@@ -21,7 +21,7 @@
     }
   }
 
-  @media (max-width:1300px){
+  @media (max-width: 1300px) {
     margin-top: 90px;
   }
 
@@ -83,14 +83,14 @@
 @media (max-width: 430px) {
   .privacy-text {
     h1 {
-      font-size: 12px; // Feste Größe wie gewünscht
-      max-width: 100%; // Keine Breitenbeschränkung
-      word-break: break-word; // Sicherstellen, dass "Datenschutzerklärung" umbricht
+      font-size: 12px;
+      max-width: 100%;
+      word-break: break-word;
     }
     a {
       font-size: 0.8rem;
-      max-width: 100%; // Links nutzen volle Breite
-      word-break: break-all; // URLs umbrechen
+      max-width: 100%;
+      word-break: break-all;
     }
   }
 

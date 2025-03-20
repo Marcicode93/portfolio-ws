@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [TranslateDirective, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss',
 })

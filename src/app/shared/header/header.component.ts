@@ -38,18 +38,18 @@ export class HeaderComponent implements OnInit {
   changeLanguage(language: string) {
     this.translate.use(language);
     this.currentLanguage = language;
-    localStorage.setItem('selectedLanguage', language); // Speichern
+    localStorage.setItem('selectedLanguage', language);
   }
 
   ngOnInit() {
     const savedLanguage = localStorage.getItem('selectedLanguage');
     if (savedLanguage) {
-      this.changeLanguage(savedLanguage); // Wiederherstellen
+      this.changeLanguage(savedLanguage);
     }
   }
 
   @HostListener('window:scroll', [])
   onScroll() {
-    this.isScrolled = window.scrollY > 50; // Ändert Header-Styling nach 50px Scroll
+    this.isScrolled = window.scrollY > 50;
   }
 }

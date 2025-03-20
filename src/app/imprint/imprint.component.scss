@@ -1,30 +1,30 @@
 @import "../../styles.scss";
 
 main {
-    display: flex;
-    @include contentmax();
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 36px;
-    height: 75vh;
-    flex: 1;
-    margin-bottom: 36px;
-    max-width: 1920px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  display: flex;
+  @include contentmax();
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  height: 75vh;
+  flex: 1;
+  margin-bottom: 36px;
+  max-width: 1920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .back-arrow {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transition: all 500ms ease;
-    margin-top: 12px;
+.back-arrow {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  margin-top: 12px;
 
-    &:hover {
-      transform: scale(1.2) translateY(-5px);
-      @include glow();
-    }
+  &:hover {
+    transform: scale(1.2) translateY(-5px);
+    @include glow();
   }
+}

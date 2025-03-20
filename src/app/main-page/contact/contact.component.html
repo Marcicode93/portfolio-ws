@@ -8,7 +8,9 @@
     <div class="elements">
       <div class="left">
         <span class="subtitle">{{ "contact.tagline" | translate }}</span>
-        <p>{{ "contact.text" | translate }}</p>
+        <p>
+          {{ "contact.text" | translate }}
+        </p>
       </div>
       <div class="right">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -24,8 +26,7 @@
           />
           <div class="error">
             @if (nameField.invalid && nameField.touched) {
-              {{ "contact.name_required" | translate }}
-            }
+            {{ "contact.name_required" | translate }} }
           </div>
           <label class="label">Email:</label>
           <input
@@ -40,7 +41,7 @@
           />
           <div class="error">
             @if (emailField.invalid && emailField.touched) {
-              {{ "contact.email_required" | translate }}
+            {{ "contact.email_required" | translate }}
             }
           </div>
           <label class="label">Message:</label>
@@ -54,29 +55,37 @@
             rows="30"
             cols="50"
             required
-          ></textarea>
+          >
+          </textarea>
           <div class="error">
             @if (messageField.invalid && messageField.touched) {
-              {{ "contact.message_required" | translate }}
-            }
+            {{ "contact.message_required" | translate }} }
           </div>
           <div class="checkbox">
             @if (isChecked) {
-              <img
-                src="../../../assets/img/06_contact/Property 1=Checked.png"
-                (click)="toggleCheckbox()"
-                alt="checkbox-checked"
-              />
+
+            <img
+              src="../../../assets/img/06_contact/Property 1=Checked.png"
+              (click)="toggleCheckbox()"
+              alt="checkbox-checked"
+            />
             } @else {
-              <img
-                src="../../../assets/img/06_contact/Property 1=Default.png"
-                (click)="toggleCheckbox()"
-                alt="checkbox-unchecked"
-              />
+
+            <img
+              src="../../../assets/img/06_contact/Property 1=Default.png"
+              (click)="toggleCheckbox()"
+              alt="checkbox-unchecked"
+            />
             }
-            <p [innerHTML]="'contact.privacy' | translate" (click)="handleLinkClick($event)"></p>
+
+            <p
+              [innerHTML]="'contact.privacy' | translate"
+              (click)="handleLinkClick($event)"
+            ></p>
             @if (formSubmitted && !isChecked) {
-              <p class="error-message" style="color: red">Please accept the privacy policy.</p>
+            <p class="error-message" style="color: red">
+              Please accept the privacy policy.
+            </p>
             }
           </div>
           <button
@@ -86,7 +95,9 @@
             [innerHTML]="'contact.submit' | translate"
           ></button>
           @if (messageSent) {
-            <span class="success-message">{{ "contact.success" | translate }}</span>
+          <span class="success-message">{{
+            "contact.success" | translate
+          }}</span>
           }
         </form>
       </div>

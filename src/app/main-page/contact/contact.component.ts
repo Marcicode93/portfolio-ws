@@ -1,8 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
-import { TranslateService, TranslatePipe } from '@ngx-translate/core';
+import { RouterModule, Router } from '@angular/router';
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective,
+} from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,9 +17,7 @@ import 'aos/dist/aos.css';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent implements OnInit {
-  constructor(private translate: TranslateService, private router: Router) {}
-
+export class ContactComponent {
   ngOnInit(): void {
     AOS.init();
   }
@@ -28,7 +30,9 @@ export class ContactComponent implements OnInit {
   };
 
   messageSent: boolean = false;
+
   http = inject(HttpClient);
+
   mailTest = true;
   formSubmitted = false;
 
@@ -49,7 +53,10 @@ export class ContactComponent implements OnInit {
 
   handleLinkClick(event: Event) {
     const target = event.target as HTMLElement;
-    if (target.tagName === 'A' && target.getAttribute('href') === 'data-privacy') {
+    if (
+      target.tagName === 'A' &&
+      target.getAttribute('href') === 'data-privacy'
+    ) {
       event.preventDefault();
       this.router.navigate(['/data-privacy']);
     }
@@ -57,27 +64,38 @@ export class ContactComponent implements OnInit {
 
   onSubmit(ngForm: NgForm) {
     this.formSubmitted = true;
-    if (ngForm.submitted && ngForm.form.valid && this.isChecked) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-            ngForm.resetForm();
-            this.formSubmitted = false;
-            this.messageSent = true;
-            setTimeout(() => (this.messageSent = false), 5000);
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.log('Data sent: ', this.contactData),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && !this.isChecked) {
-      ngForm.resetForm();
-      this.formSubmitted = false;
+    if (ngForm.submitted && ngForm.form.valid) {
+      if (this.isChecked) {
+        this.submitForm(ngForm);
+      } else {
+        this.resetForm(ngForm);
+      }
     }
   }
 
+  private submitForm(ngForm: NgForm) {
+    this.http
+      .post(this.post.endPoint, this.post.body(this.contactData))
+      .subscribe({
+        next: (response) => this.handleSuccess(ngForm),
+        error: (error) => console.error(error),
+        complete: () => console.log('Data sent: ', this.contactData),
+      });
+  }
+
+  private handleSuccess(ngForm: NgForm) {
+    ngForm.resetForm();
+    this.formSubmitted = false;
+    this.messageSent = true;
+    setTimeout(() => (this.messageSent = false), 5000);
+  }
+
+  private resetForm(ngForm: NgForm) {
+    ngForm.resetForm();
+    this.formSubmitted = false;
+  }
+
+  constructor(private translate: TranslateService, private router: Router) {}
   changeLanguage(language: string) {
     this.translate.use(language);
   }
