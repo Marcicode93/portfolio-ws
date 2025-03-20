@@ -1,22 +1,21 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import {
-  TranslateService,
-  TranslatePipe,
-  TranslateDirective,
-} from '@ngx-translate/core';
+import { Router, RouterModule } from '@angular/router';
+import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslatePipe],
+  imports: [FormsModule, TranslatePipe, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  constructor(private translate: TranslateService, private router: Router) {}
+
   ngOnInit(): void {
     AOS.init();
   }
@@ -29,9 +28,7 @@ export class ContactComponent {
   };
 
   messageSent: boolean = false;
-
   http = inject(HttpClient);
-
   mailTest = true;
   formSubmitted = false;
 
@@ -48,6 +45,14 @@ export class ContactComponent {
 
   toggleCheckbox() {
     this.isChecked = !this.isChecked;
+  }
+
+  handleLinkClick(event: Event) {
+    const target = event.target as HTMLElement;
+    if (target.tagName === 'A' && target.getAttribute('href') === 'data-privacy') {
+      event.preventDefault();
+      this.router.navigate(['/data-privacy']);
+    }
   }
 
   onSubmit(ngForm: NgForm) {
@@ -73,7 +78,6 @@ export class ContactComponent {
     }
   }
 
-  constructor(private translate: TranslateService) {}
   changeLanguage(language: string) {
     this.translate.use(language);
   }
